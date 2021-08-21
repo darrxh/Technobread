@@ -18,6 +18,12 @@ class userpc:
         self.thermal = thermal()
         self.case = case()
         self.psu = psu()
+
+    def showspecs(self):
+
+        return "N/A"
+
+
 """    
     def check_specs(self):
 
@@ -66,7 +72,7 @@ def has_pc(user):
 @client.event
 async def on_ready():
     print('We have logged in as {0.user}'.format(client))
-    print('Ready to rock and roll')
+    print('Ready!')
 
 
 @client.event
@@ -76,19 +82,33 @@ async def on_message(message):
     msg = message.content.lower()
     if (msg.startswith('$hello')):
         await message.channel.send('Hello!')
+
     elif (msg.startswith('$myid')):
         await message.channel.send('your Id is ' + str(client.user.id))
         await message.channel.send('my mention is' + str(client.user.mention))
-        await message.channel.send(client.user.avatar_url)
+        await message.channel.send(message.author.avatar_url)
         await message.channel.send('your name is ' + str(message.author.mention))
 
+    elif (msg.startswith('$idof')):
+        userid = msg[msg.find('@'):]
+        await message.channel.send(userid)
+
+
     elif (msg.startswith('$addpc')):
-        if (has_pc()):
-            new_computer = userpc()
-            fake_database[user](new_computer)
-            await message.channel.send("New Rig added to your profile")
-        else:
+        if (has_pc(client.user.id)):
             await message.channel.send("You already have a PC added to your profile.")
+        else:
+            new_computer = userpc()
+            fake_database.update({client.user.id:new_computer})
+            await message.channel.send("New Rig added to your profile")
+
+    elif (msg.startswith('$mypc')):
+        if (has_pc(client.user.id)):
+            await message.channel.send(fake_database[client.user.id].showspecs)
+        else:
+            await message.channel.send("You do not have a PC added to your profile")
+
+
 
 
 
