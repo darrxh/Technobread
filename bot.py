@@ -78,9 +78,9 @@ async def on_message(message):
         await message.channel.send('Hello!')
     elif (msg.startswith('$myid')):
         await message.channel.send('your Id is ' + str(client.user.id))
-        await message.channel.send('your mention is ' + str(client.user.mention))
-        await message.channel.send(client.user.avatar)
-        await message.channel.send('your name is ' + str(client.user.name))
+        await message.channel.send('my mention is' + str(client.user.mention))
+        await message.channel.send(client.user.avatar_url)
+        await message.channel.send('your name is ' + str(message.author.mention))
 
     elif (msg.startswith('$addpc')):
         if (has_pc()):
@@ -89,8 +89,6 @@ async def on_message(message):
             await message.channel.send("New Rig added to your profile")
         else:
             await message.channel.send("You already have a PC added to your profile.")
-
-
 
 
 
