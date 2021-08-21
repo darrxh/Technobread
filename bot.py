@@ -2,17 +2,22 @@ import discord
 
 client = discord.Client()
 
+fake_database = dict()
+
+#cpu="N/A",gpu="N/A",ram="N/A",mobo="N/A",storage="N/A",thermal="N/A",case="N/A",psu="N/A"
+
+
 
 class userpc:
-    def __init__(self,cpu="N/A",gpu="N/A",ram="N/A",mobo="N/A",storage="N/A",thermal="N/A",case="N/A",psu="N/A"):
-        self.cpu = cpu
-        self.gpu = gpu
-        self.ram = ram
-        self.mobo = mobo
-        self.storage = storage
-        self.thermal = thermal
-        self.case = case
-        self.psu = psu
+    def __init__(self):
+        self.cpu = cpu()
+        self.gpu = gpu()
+        self.ram = ram()
+        self.mobo = mobo()
+        self.storage = storage()
+        self.thermal = thermal()
+        self.case = case()
+        self.psu = psu()
 
     def check_specs(self):
 
@@ -50,9 +55,12 @@ gpu_brand_list = ["Nvidia","AMD"]
 mobo_brand_list = ["Asrock","Asus","MSI"]
 
 
-
-
-
+def has_pc(user):
+    for index in fake_database:
+        if (user == index):
+            return True
+        else:
+            return False
 
 @client.event
 async def on_ready():
@@ -69,7 +77,14 @@ async def on_message(message):
     if (msg.startswith('$hello')):
         await message.channel.send('Hello!')
     elif (msg.startswith('$addpc'))
-        new_computer = userpc()
+        if (has_pc()):
+            new_computer = userpc()
+            fake_database[user](new_computer)
+            await message.channel.send("New Rig added to your profile")
+        else:
+            await message.channel.send("You already have a PC added to your profile.")
+
+
 
 
 
