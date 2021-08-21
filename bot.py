@@ -77,8 +77,12 @@ async def on_message(message):
     if (msg.startswith('$hello')):
         await message.channel.send('Hello!')
     elif (msg.startswith('$myid')):
-        await message.channel.send(user.message.author.id)
-    elif (msg.startswith('$addpc'))
+        await message.channel.send('your Id is ' + str(client.user.id))
+        await message.channel.send('your mention is ' + str(client.user.mention))
+        await message.channel.send(client.user.avatar)
+        await message.channel.send('your name is ' + str(client.user.name))
+
+    elif (msg.startswith('$addpc')):
         if (has_pc()):
             new_computer = userpc()
             fake_database[user](new_computer)
