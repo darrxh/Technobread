@@ -18,7 +18,7 @@ class userpc:
         self.thermal = thermal()
         self.case = case()
         self.psu = psu()
-
+"""    
     def check_specs(self):
 
     def addcpu(self):
@@ -48,6 +48,7 @@ class mobo:
 class storage:
     def __init__(self):
 
+"""
 
 ram_brand_list = ["Corsair","G.Skill","HyperX","Crucial","Kingston","TeamGroup"]
 cpu_brand_list = ["AMD","Intel"]
@@ -72,10 +73,11 @@ async def on_ready():
 async def on_message(message):
     if message.author == client.user:
         return
-
-       msg = message.content.lower()
+    msg = message.content.lower()
     if (msg.startswith('$hello')):
         await message.channel.send('Hello!')
+    elif (msg.startswith('$myid')):
+        await message.channel.send(user.message.author.id)
     elif (msg.startswith('$addpc'))
         if (has_pc()):
             new_computer = userpc()
