@@ -13,41 +13,42 @@ class userpc:
         self.cpu = cpu()
         self.gpu = gpu()
         self.ram = ram()
-        self.mobo = mobo()
-        self.storage = storage()
-        self.thermal = thermal()
-        self.case = case()
-        self.psu = psu()
+        self.mobo = "N/A"
+        self.storage = "N/A"
+        self.thermal = "N/A"
+        self.case = "N/A"
+        self.psu = "N/A"
 
     def showspecs(self):
 
-        return "N/A"
+        return [self.cpu.model, self.gpu.model, self.ram.model]
 
+    def changecpu(self, cpu_input):
 
-"""    
-    def check_specs(self):
+        self.cpu.model = cpu_input
 
-    def addcpu(self):
+    def changegpu(self, gpu_input):
 
-    def addgpu(self):
+        self.gpu.model = gpu_input
 
-    def addram(self):
+    def changeram(self, ram_input):
 
-    def addmobo(self):
+        self.ram.model = ram_input
+
 
 class cpu:
-    def __init__(self):
-
-
-
-
+    def __init__(self, model="N/A"):
+        self.model = model
 
 class gpu:
-    def __init__(self):
+    def __init__(self, model="N/A"):
+        self.model = model
 
 class ram:
-    def __init__(self):
+    def __init__(self, model="N/A"):
+        self.model = model
 
+"""
 class mobo:
     def __init__(self):
 
@@ -55,6 +56,8 @@ class storage:
     def __init__(self):
 
 """
+
+
 
 ram_brand_list = ["Corsair","G.Skill","HyperX","Crucial","Kingston","TeamGroup"]
 cpu_brand_list = ["AMD","Intel"]
@@ -104,12 +107,39 @@ async def on_message(message):
 
     elif (msg.startswith('$mypc')):
         if (has_pc(client.user.id)):
-            await message.channel.send(fake_database[client.user.id].showspecs)
+            await message.channel.send(fake_database[client.user.id].showspecs())
         else:
             await message.channel.send("You do not have a PC added to your profile")
 
+    elif (msg.startswith('$removepc')):
+        if (has_pc(client.user.id)):
+            fake_database.pop(client.user.id)
+            await message.channel.send("Successfully removed PC from profile")
+        else:
+            await message.channel.send("You have no PC on your profile to remove")
 
+    elif (msg.startswith('$changecpu')):
+        if (has_pc(client.user.id)):
+            cpu_model = msg[msg.find(' '):]
+            fake_database[client.user.id].changecpu(cpu_model)
+            await message.channel.send("Added CPU: " + cpu_model + " to PC profile")
+        else:
+            await message.channel.send("You have no PC on your profile")
 
+    elif (msg.startswith('$changegpu')):
+        if (has_pc(client.user.id)):
+            gpu_model = msg[msg.find(' '):]
+            fake_database[client.user.id].changegpu(gpu_model)
+            await message.channel.send("Added GPU: " + gpu_model + " to PC profile")
+        else:
+            await message.channel.send("You have no PC on your profile")
 
+    elif (msg.startswith('$changeram')):
+        if (has_pc(client.user.id)):
+            ram_model = msg[msg.find(' '):]
+            fake_database[client.user.id].changeram(ram_model)
+            await message.channel.send("Added RAM: " + ram_model + " to PC profile")
+        else:
+            await message.channel.send("You have no PC on your profile")
 
 client.run('ODc4MzkyNzkzMDMzMjM2NTgx.YSAhCQ.bzGhb5UoRwiwrHSEc1_UluiGkTI')
