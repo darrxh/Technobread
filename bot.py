@@ -107,7 +107,15 @@ async def on_message(message):
 
     elif (msg.startswith('$mypc')):
         if (has_pc(client.user.id)):
-            await message.channel.send(fake_database[client.user.id].showspecs())
+            pc_array = fake_database[client.user.id].showspecs()
+            await message.channel.send("""
+            Your Specs:
+            
+            CPU: {}
+            GPU: {}
+            RAM: {}
+            
+            """)
         else:
             await message.channel.send("You do not have a PC added to your profile")
 
