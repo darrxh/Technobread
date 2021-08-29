@@ -10,3 +10,13 @@ class Cpu:
         self.benchmark =
         self.cores =
         self.thread =
+        self.clock
+        self.release
+
+class Gpu:
+    def __init__(self):
+        self.brand
+        self.model
+        self.rank
+        self.benchmark
+        self.
