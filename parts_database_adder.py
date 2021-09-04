@@ -1,3 +1,4 @@
+from datetime import datetime
 
 
 class Cpu:
@@ -17,8 +18,6 @@ class Cpu:
         self.url = "N/A"
         self.price = "N/A"
 
-    def add_cpu(self):
-
 
 
 class Gpu:
@@ -37,10 +36,36 @@ class Ram:
         self.speed ="N/A"
 
 def main():
-    try:
-    input(print("Which part to add? CPU | GPU | RAM | MOBO | SSD | HDD | PSU | CASE"))
-    except N
+    while True:
+        print("Which part to add(input x to exit)? CPU | GPU | RAM | MOBO | SSD | HDD | PSU | CASE /n")
+        part_category = str(input()).lower()
+        if (part_category == 'x'):
+            break
 
+        elif (part_category == 'cpu'):
+            add_cpu()
+        elif (part_category == 'gpu'):
+            add_gpu()
+        elif (part_category == 'ram'):
+            add_ram()
+        elif (part_category == 'mobo'):
+            add_mobo()
+        elif (part_category == 'ssd'):
+            add_ssd()
+        elif (part_category == 'hdd'):
+            add_hdd()
+        elif (part_category == 'psu'):
+            add_psu()
+        elif (part_category == 'case'):
+            add_case()
+
+        else:
+            print ("Invalid entry")
+            with open('/Logs/database_adder_error_log.txt','a') as log:
+                log.write('huh')
+
+
+main()
 
 
 
