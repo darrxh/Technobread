@@ -17,6 +17,7 @@ class Cpu:
         self.integrated_graphics = "N/A"
         self.url = "N/A"
         self.price = "N/A"
+        self.wattage = "N/A"
 
 
 
@@ -27,13 +28,28 @@ class Gpu:
         self.rank ="N/A"
         self.benchmark ="N/A"
         self.vram ="N/A"
+        self.url = "N/A"
+        self.base_clock = "N/A"
+        self.wattage = "N/A"
+        self.price = "N/A"
 
 
 class Ram:
     def __init__(self):
+        #Base info variables
         self.brand = "N/A"
+        self.model = "N/A"
         self.size ="N/A"
-        self.speed ="N/A"
+        self.speed = "N/A"
+        #Extra info variables
+        self.rank = "N/A"
+        self.benchmark = "N/A"
+        self.url = "N/A"
+        self.price = "N/A"
+
+
+
+
 
 def main():
     while True:
@@ -63,6 +79,8 @@ def main():
             print ("Invalid entry")
             with open('/Logs/database_adder_error_log.txt','a') as log:
                 log.write('huh')
+            
+
 
 
 main()
