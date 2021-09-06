@@ -20,14 +20,15 @@ class Cpu:
         self.wattage = "N/A"
 
 
-
 class Gpu:
     def __init__(self):
+        #Base info variables
         self.brand ="N/A"
         self.model ="N/A"
         self.rank ="N/A"
         self.benchmark ="N/A"
         self.vram ="N/A"
+        #Extra info variables
         self.url = "N/A"
         self.base_clock = "N/A"
         self.wattage = "N/A"
@@ -46,8 +47,6 @@ class Ram:
         self.benchmark = "N/A"
         self.url = "N/A"
         self.price = "N/A"
-
-
 
 
 
@@ -77,10 +76,10 @@ def main():
 
         else:
             print ("Invalid entry")
-            with open('/Logs/database_adder_error_log.txt','a') as log:
-                log.write('huh')
-            
-
+            with open('Logs/database_adder_error_log.txt','a') as log:
+                now = datetime.now()
+                now = str(now)
+                log.write(now + ":  Error")
 
 
 main()
