@@ -52,9 +52,10 @@ class Ram:
 
 def main():
     while True:
-        print("Which part to add(input x to exit)? CPU | GPU | RAM | MOBO | SSD | HDD | PSU | CASE /n")
+        print("Which part to add(input x to exit)? CPU | GPU | RAM | MOBO | SSD | HDD | PSU | CASE \n")
         part_category = str(input()).lower()
         if (part_category == 'x'):
+            print ("Program exited.")
             break
 
         elif (part_category == 'cpu'):
@@ -79,7 +80,7 @@ def main():
             with open('Logs/database_adder_error_log.txt','a') as log:
                 now = datetime.now()
                 now = str(now)
-                log.write(now + ":  Error")
+                log.write(now + ":  Error \n")
 
 
 main()
