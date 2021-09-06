@@ -61,7 +61,7 @@ def main():
 
         else:
             print ("Invalid entry")
-            with open('/Logs/database_adder_error_log.txt','a') as log:
+            with open('database_adder_error_log.txt','a') as log:
                 log.write('huh')
 
 
