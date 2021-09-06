@@ -27,8 +27,8 @@ class Cpu:
         self.model = str(input("Model?  "))
         self.cores = int(input("Number of Cores?    "))
         self.threads = int(input("Number of Threads?    "))
-        self.base_clock = int(input("Base clock speed?     "))
-        self.boost_clock = int(input("Boost Clock speed?     "))
+        self.base_clock = float(input("Base clock speed?     "))
+        self.boost_clock = float(input("Boost Clock speed?     "))
         self.release_date = str(input("Release Quarter?  (Q* ****     "))
         self.benchmark_percentage = int(input("Benchmark percentage?    "))
         self.rank = int(input("Rank?"))
@@ -70,7 +70,7 @@ def append_component(new_part):
     print ("Adding component...")
     with open('Logs/database_adder_error_log.txt', 'a') as database:
         json_string = json.dumps(new_part.__dict__)
-        database.write(json_string)
+        database.write(json_string + "\n")
     print ("Component added! \n")
 
 def main():

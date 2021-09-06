@@ -10,3 +10,4 @@
 2021-09-06 02:06:35.857887:  Error 
 2021-09-06 02:06:36.104215:  Error 
 {"brand": "Intel", "model": "i7-10700F", "cores": 8, "threads": 16, "base_clock": 4, "boost_clock": 5, "release_date": "Q1 2020", "benchmark_percentage": 100, "rank": 17, "integrated_graphics": true, "url": "fajsdfhlkjasdhf", "price": 300, "wattage": 105}
+{"brand": "AMD", "model": "Ryzen 7 3600x", "cores": 6, "threads": 12, "base_clock": 3.6, "boost_clock": 4.1, "release_date": "Q1 2019", "benchmark_percentage": 90, "rank": 70, "integrated_graphics": true, "url": "khjgkjhgkljhgskjhds", "price": 150, "wattage": 105}
