@@ -14,15 +14,12 @@ class Cpu:
         #Extra info variables
         self.release_date ="N/A"
         self.benchmark_percentage ="N/A"
-        self.rank ="N/A"
         self.integrated_graphics = "N/A"
         self.url = "N/A"
         self.price = "N/A"
         self.wattage = "N/A"
 
-
     def add_cpu(self):
-
         self.brand = str(input("Brand?  "))
         self.model = str(input("Model?  "))
         self.cores = int(input("Number of Cores?    "))
@@ -31,7 +28,6 @@ class Cpu:
         self.boost_clock = float(input("Boost Clock speed?     "))
         self.release_date = str(input("Release Quarter?  (Q* ****     "))
         self.benchmark_percentage = int(input("Benchmark percentage?    "))
-        self.rank = int(input("Rank?"))
         self.integrated_graphics = bool(input("Integrated Graphics? True or False   "))
         self.url = str(input("URL?     "))
         self.price = int(input("Price?     "))
@@ -43,14 +39,23 @@ class Gpu:
         #Base info variables
         self.brand ="N/A"
         self.model ="N/A"
-        self.rank ="N/A"
-        self.benchmark ="N/A"
         self.vram ="N/A"
         #Extra info variables
+        self.benchmark ="N/A"
         self.url = "N/A"
         self.base_clock = "N/A"
-        self.wattage = "N/A"
         self.price = "N/A"
+        self.wattage = "N/A"
+
+    def add_gpu(self):
+        self.brand = str(input("Brand?  "))
+        self.model = str(input("Model?  "))
+        self.vram = int(input("Video Memory?    "))
+        self.benchmark = int(input("Benchmark %?     "))
+        self.url = str(input("URL?  "))
+        self.base_clock = int(input("Base Clock speed? (MHz)    "))
+        self.price = int(input("Price?      "))
+        self.wattage = int(input("Wattage? TDP?     "))
 
 
 class Ram:
@@ -61,10 +66,10 @@ class Ram:
         self.size ="N/A"
         self.speed = "N/A"
         #Extra info variables
-        self.rank = "N/A"
         self.benchmark = "N/A"
         self.url = "N/A"
         self.price = "N/A"
+    
 
 def append_component(new_part):
     print ("Adding component...")
@@ -87,7 +92,10 @@ def main():
             append_component(new_cpu)
 
         elif (part_category == 'gpu'):
-            add_gpu()
+            new_gpu = Gpu()
+            new_gpu.add_gpu()
+            append_component(new_gpu)
+
         elif (part_category == 'ram'):
             add_ram()
         elif (part_category == 'mobo'):
