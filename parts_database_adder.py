@@ -97,6 +97,37 @@ class Mobo:
         self.url = str(input("Pcpartpicker Link?     "))
         self.price = int(input("Price?     "))
 
+class Ssd:
+    def __init__(self):
+        #Base info Variables
+        self.brand = "N/A"
+        self.model = "N/A"
+        self.size = "N/A"
+        #Extra info variables
+        self.speed = "N/A"
+        self.price = "N/A"
+        self.benchmark = "N/A"
+
+    def add_ssd(self):
+        self.brand = str(input("Brand?    "))
+        self.model = str(input("Model?    "))
+        self.size = int(input("Capacity? (GB)   "))
+        self.speed = int(input("Speed (MB/s)    "))
+        self.price = int(input("Price?    "))
+        self.benchmark = int(input("Benchmark %?   "))
+
+class Psu:
+    def __init__(self):
+        self.brand = "N/A"
+        self.model = "N/A"
+        self.wattage = "N/A"
+        self.form_factor = "N/A"
+        self.eff_rating = "N/A"
+        self.price = "N/A"
+        self.date = "N/A"
+
+    def add_psu(self):
+
 
 
 def append_component(new_part):
@@ -105,6 +136,7 @@ def append_component(new_part):
         json_string = json.dumps(new_part.__dict__)
         database.write(json_string + "\n")
     print ("Component added! \n")
+
 
 def main():
     while True:
