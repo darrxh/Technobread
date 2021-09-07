@@ -69,7 +69,16 @@ class Ram:
         self.benchmark = "N/A"
         self.url = "N/A"
         self.price = "N/A"
-    
+
+    def add_ram(self):
+        self.brand = str(input("Brand?    "))
+        self.model = str(input("Model?    "))
+        self.size = int(input("Size GB?     "))
+        self.speed = int(input("Speed MHz?    "))
+        self.benchmark = int(input("Benchmark %?    "))
+        self.url = str(input("Pcpartpicker Link?     "))
+        self.price = int(input("Price?     "))
+
 
 def append_component(new_part):
     print ("Adding component...")
@@ -97,7 +106,10 @@ def main():
             append_component(new_gpu)
 
         elif (part_category == 'ram'):
-            add_ram()
+            new_ram = Ram()
+            new_ram.add_ram()
+            append_component(new_ram)
+            
         elif (part_category == 'mobo'):
             add_mobo()
         elif (part_category == 'ssd'):
