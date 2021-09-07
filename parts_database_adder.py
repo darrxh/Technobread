@@ -80,6 +80,25 @@ class Ram:
         self.price = int(input("Price?     "))
 
 
+class Mobo:
+    def __init__(self):
+        #Base info Variables
+        self.brand = "N/A"
+        self.model = "N/A"
+        #Extra info Variables
+        self.form_factor = "N/A"
+        self.url = "N/A"
+        self.price = "N/A"
+
+    def add_mobo(self):
+        self.brand = str(input("Brand?    "))
+        self.model = str(input("Model?     "))
+        self.form_factor = str(input("Form factor?    "))
+        self.url = str(input("Pcpartpicker Link?     "))
+        self.price = int(input("Price?     "))
+
+
+
 def append_component(new_part):
     print ("Adding component...")
     with open('Logs/database_adder_error_log.txt', 'a') as database:
@@ -109,9 +128,12 @@ def main():
             new_ram = Ram()
             new_ram.add_ram()
             append_component(new_ram)
-            
+
         elif (part_category == 'mobo'):
-            add_mobo()
+            new_mobo = Mobo()
+            new_mobo.add_mobo()
+            append_component(new_mobo)
+
         elif (part_category == 'ssd'):
             add_ssd()
         elif (part_category == 'hdd'):
