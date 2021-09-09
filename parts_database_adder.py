@@ -128,6 +128,16 @@ class Psu:
 
     def add_psu(self):
 
+class Monitor:
+    def __init__(self):
+        self.brand = "N/A"
+        self.size = "N/A"
+        self.refresh = "N/A"
+        self.model = "N/A"
+        self.type = "N/A"
+        self.price = "N/A"
+        self.date = "N/A"
+
 
 
 def append_component(new_part):
