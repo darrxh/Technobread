@@ -138,6 +138,15 @@ class Monitor:
         self.price = "N/A"
         self.date = "N/A"
 
+    def add_monitor(self):
+        self.brand = str(input("Brand?    "))
+        self.size = int(input("Size?     "))
+        self.refresh = int(input("Refresh rate?     "))
+        self.model = str(input("Model?    "))
+        self.type = str(input("Type?    "))
+        self.price = int(input("Price?    "))
+        self.date = str(input("Date?    "))
+
 
 
 def append_component(new_part):
@@ -184,6 +193,8 @@ def main():
             add_psu()
         elif (part_category == 'case'):
             add_case()
+        elif (part_category == 'monitor'):
+            add_monitor()
 
         else:
             print ("Invalid entry")
