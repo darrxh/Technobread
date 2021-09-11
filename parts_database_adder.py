@@ -147,7 +147,18 @@ class Monitor:
         self.price = int(input("Price?    "))
         self.date = str(input("Date?    "))
 
+class Case:
+    def __init__(self):
+        self.brand = "N/A"
+        self.model = "N/A"
+        self.type = "N/A"
+        self.price = "N/A"
 
+    def add_case(self):
+        self.brand = str(input("Brand?    "))
+        self.model = str(input("Model?    "))
+        self.type = str(input("Model?    "))
+        self.price = int(input("Price?    "))
 
 def append_component(new_part):
     print ("Adding component...")
