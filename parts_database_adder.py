@@ -127,6 +127,13 @@ class Psu:
         self.date = "N/A"
 
     def add_psu(self):
+        self.brand = str(input("Brand?    "))
+        self.model = str(input("Model?    "))
+        self.wattage = int(input("Wattage?   "))
+        self.form_factor = str(input("Form Factor?    "))
+        self.eff_rating = str(input("Efficiency rating?    "))
+        self.price = int(input("Price?    "))
+        self.date = str(input("Date?     "))
 
 class Monitor:
     def __init__(self):
@@ -206,6 +213,7 @@ def main():
             add_case()
         elif (part_category == 'monitor'):
             add_monitor()
+        elif (part_category == '')
 
         else:
             print ("Invalid entry")
