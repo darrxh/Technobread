@@ -43,35 +43,38 @@ def common_part_counter():
         json_string_ub = ub_data.read()
         data_list_ub = json.loads(json_string_ub)
 
+    #move these print states v
     print ("Number of elements in UB: " + str(len(data_list_ub)))
     print ("Number of elements in PCPP: " + str(len(data_list_pcpp)))
 
-
-
-
-    counter = 0
+    ub_list = []
+    pcpp_list = []
     common_list = []
-    uncommon_list = []
+    counter = 0
+
 
     for pcpp_index in data_list_pcpp:
-        condition = False
         for ub_index in data_list_ub:
             if (ub_index['Model'] == pcpp_index['model']):
                 counter = counter + 1
                 common_list.append(ub_index['Model'])
-                condition = True
-        if (not(condition)):
-            uncommon_element = pcpp_index['model']
-            uncommon_list.append(uncommon_element)
+
+
+    for pcpp_index in (0,len(data_list_pcpp)):
+        for common_index in common_list:
+            if (data_list_pcpp[pcpp_index]['model'] == common_index):
+
+    for ub_index in data_list_ub:
+        for common_index in common_list:
+            if (ub_index['Model'] == common_index):
+
 
     print ("Elements in common: " + str(counter))
     with open("Data/common_cpu_list.txt","w") as finish_data:
         for part in common_list:
             finish_data.write(part + "\n")
 
-    with open("Data/uncommon_cpu_list.txt","w") as uncommon_data:
-        for uncommon in uncommon_list:
-            uncommon_data.write(uncommon + "\n")
+
 
 common_part_counter()
 
