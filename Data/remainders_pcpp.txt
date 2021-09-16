@@ -2,7 +2,6 @@
 3850
 5150
 5350
-5350
 A10-5700
 A10-5800K
 A10-6700
@@ -12,9 +11,7 @@ A10-6790K
 A10-6800B
 A10-6800K
 A10-7700K
-A10-7700K
 A10-7800
-A10-7850K
 A10-7850K
 A10-7860k
 A10-7870K
@@ -24,15 +21,11 @@ A10-9700E
 A12-9800
 A12-9800E
 A4-3300
-A4-3300
-A4-3400
 A4-3400
 A4-3420
 A4-3450
 A4-4000
-A4-4000
 A4-4020
-A4-5300
 A4-5300
 A4-6300
 A4-6300B
@@ -45,7 +38,6 @@ A6-5400K
 A6-6400K
 A6-6420K
 A6-7400K
-A6-7470K
 A6-7470K
 A6-7480
 A6-9500
@@ -68,7 +60,6 @@ Athlon II X2 221
 Athlon II X2 235e
 Athlon II X2 240e
 Athlon II X2 245e
-Athlon II X2 250
 Athlon II X2 250
 Athlon II X2 250u
 Athlon II X2 260u
@@ -97,13 +88,9 @@ Athlon X4 950
 Athlon X4 970
 Atom D2500
 Celeron 420
-Celeron 420
 Celeron 430
-Celeron 430
-Celeron 440
 Celeron 440
 Celeron 450
-Celeron E1200
 Celeron E1200
 Celeron E1600
 Celeron E3500
@@ -115,96 +102,56 @@ Celeron G465
 Celeron G470
 Celeron G4900T
 Celeron G4920
-Celeron G4920
 Celeron G4930
 Celeron G555
 Celeron G5905
 Celeron G5905T
 Celeron G5925
 Core 2 Duo E4300
-Core 2 Duo E4300
-Core 2 Duo E4400
 Core 2 Duo E4400
 Core 2 Duo E4500
 Core 2 Duo E4600
-Core 2 Duo E4600
-Core 2 Duo E6320
 Core 2 Duo E6320
 Core 2 Duo E6400
-Core 2 Duo E6400
-Core 2 Duo E6420
 Core 2 Duo E6420
 Core 2 Duo E6540
 Core 2 Duo E6550
-Core 2 Duo E6550
-Core 2 Duo E6550
-Core 2 Duo E6700
-Core 2 Duo E6700
 Core 2 Duo E6700
 Core 2 Duo E6750
-Core 2 Duo E6750
-Core 2 Duo E6850
 Core 2 Duo E6850
 Core 2 Duo E7200
-Core 2 Duo E7200
-Core 2 Duo E7300
 Core 2 Duo E7300
 Core 2 Duo E7400
-Core 2 Duo E7400
-Core 2 Duo E7400
 Core 2 Duo E7500
-Core 2 Duo E7500
-Core 2 Duo E7500
-Core 2 Duo E7600
 Core 2 Duo E7600
 Core 2 Duo E8190
 Core 2 Duo E8200
 Core 2 Duo E8300
 Core 2 Duo E8400
-Core 2 Duo E8400
-Core 2 Duo E8400
-Core 2 Duo E8400
 Core 2 Duo E8500
 Core 2 Duo E8600
-Core 2 Duo E8600
-Core 2 Extreme QX6700
 Core 2 Extreme QX6700
 Core 2 Extreme QX6800
-Core 2 Extreme QX6800
 Core 2 Extreme QX6850
-Core 2 Extreme QX6850
-Core 2 Extreme QX9650
 Core 2 Extreme QX9650
 Core 2 Extreme QX9770
 Core 2 Extreme QX9775
-Core 2 Extreme QX9775
 Core 2 Extreme X6800
 Core 2 Quad Q6600
-Core 2 Quad Q6600
 Core 2 Quad Q6700
-Core 2 Quad Q6700
-Core 2 Quad Q8200
-Core 2 Quad Q8200
 Core 2 Quad Q8200
 Core 2 Quad Q8200S
 Core 2 Quad Q8300
 Core 2 Quad Q8400
-Core 2 Quad Q8400
 Core 2 Quad Q8400S
 Core 2 Quad Q9300
-Core 2 Quad Q9300
-Core 2 Quad Q9400
 Core 2 Quad Q9400
 Core 2 Quad Q9400S
 Core 2 Quad Q9450
-Core 2 Quad Q9450
-Core 2 Quad Q9505
 Core 2 Quad Q9505
 Core 2 Quad Q9505S
 Core 2 Quad Q9550
-Core 2 Quad Q9550
 Core 2 Quad Q9550S
-Core 2 Quad Q9650
 Core 2 Quad Q9650
 Core i3-2100T
 Core i3-3245
@@ -219,9 +166,7 @@ Core i3-7101TE
 Core i3-8300T
 Core i3-9100T
 Core i3-9300
-Core i3-9300
 Core i3-9320
-Core i3-9350K
 Core i3-9350K
 Core i5-2380P
 Core i5-3340S
@@ -234,7 +179,6 @@ Core i5-6400T
 Core i5-6402P
 Core i5-650
 Core i5-6500T
-Core i5-6500T
 Core i5-655K
 Core i5-660
 Core i5-661
@@ -244,7 +188,6 @@ Core i5-750S
 Core i5-760
 Core i5-9400T
 Core i5-9500F
-Core i5-9500F
 Core i5-9500T
 Core i5-9600T
 Core i7-3770T
@@ -253,18 +196,13 @@ Core i7-3970X Extreme Edition
 Core i7-4960X Extreme Edition
 Core i7-860
 Core i7-860S
-Core i7-860S
-Core i7-870
 Core i7-870
 Core i7-870S
 Core i7-875K
 Core i7-880
 Core i7-930
-Core i7-930
-Core i7-940
 Core i7-940
 Core i7-960
-Core i7-965 Extreme Edition
 Core i7-965 Extreme Edition
 Core i7-970
 Core i7-9700T
@@ -290,21 +228,13 @@ FX-8100
 FX-8140
 Opteron 4386
 Opteron 6320
-Opteron 6320
-Opteron 6328
 Opteron 6328
 Opteron 6344
-Opteron 6344
 Opteron 6378
-Opteron 6378
-Pentium E2140
 Pentium E2140
 Pentium E2160
 Pentium E2180
-Pentium E2180
 Pentium E2200
-Pentium E2200
-Pentium E2220
 Pentium E2220
 Pentium G2140
 Pentium G3250T
@@ -359,38 +289,25 @@ Threadripper 1900X
 Threadripper 1920X
 Threadripper 1950X
 Threadripper 2920X
-Threadripper 2920X
-Threadripper 2950X
 Threadripper 2950X
 Threadripper 2970WX
-Threadripper 2970WX
-Threadripper 2990WX
 Threadripper 2990WX
 Threadripper 3960X
 Threadripper 3970X
 Threadripper 3990X
 Xeon E-2104G
 Xeon E-2124
-Xeon E-2124
-Xeon E-2124G
 Xeon E-2124G
 Xeon E-2126G
 Xeon E-2134
-Xeon E-2134
-Xeon E-2136
 Xeon E-2136
 Xeon E-2144G
 Xeon E-2146G
-Xeon E-2146G
-Xeon E-2174G
 Xeon E-2174G
 Xeon E-2176G
-Xeon E-2176G
-Xeon E-2236
 Xeon E-2236
 Xeon E-2244G
 Xeon E-2246G
-Xeon E-2274G
 Xeon E-2274G
 Xeon E-2276G
 Xeon E-2278G
@@ -399,37 +316,27 @@ Xeon E-2288G
 Xeon E3-1220
 Xeon E3-1220 V3
 Xeon E3-1220 V5
-Xeon E3-1220 V5
-Xeon E3-1220 V6
 Xeon E3-1220 V6
 Xeon E3-1225
 Xeon E3-1225 V3
 Xeon E3-1225 V5
-Xeon E3-1225 V5
-Xeon E3-1225 V6
 Xeon E3-1225 V6
 Xeon E3-1226 V3
 Xeon E3-1230
 Xeon E3-1230 V3
-Xeon E3-1230 V3
 Xeon E3-1230 V5
-Xeon E3-1230 V6
 Xeon E3-1230 V6
 Xeon E3-1231 V3
 Xeon E3-1235
 Xeon E3-1235L V5
 Xeon E3-1240 V3
 Xeon E3-1240 V5
-Xeon E3-1240 V5
-Xeon E3-1240 V6
 Xeon E3-1240 V6
 Xeon E3-1240L V5
 Xeon E3-1241 V3
 Xeon E3-1245
 Xeon E3-1245 V3
 Xeon E3-1245 V5
-Xeon E3-1245 V5
-Xeon E3-1245 V6
 Xeon E3-1245 V6
 Xeon E3-1246 V3
 Xeon E3-1260L V5
@@ -437,18 +344,14 @@ Xeon E3-1265L V2
 Xeon E3-1265L V3
 Xeon E3-1270
 Xeon E3-1270 V3
-Xeon E3-1270 V3
 Xeon E3-1270 V5
-Xeon E3-1270 V6
 Xeon E3-1270 V6
 Xeon E3-1271 V3
 Xeon E3-1275
 Xeon E3-1275 V3
 Xeon E3-1275 V5
 Xeon E3-1275 V6
-Xeon E3-1275 V6
 Xeon E3-1276 V3
-Xeon E3-1280
 Xeon E3-1280
 Xeon E3-1280 V5
 Xeon E3-1280 V6
@@ -456,8 +359,6 @@ Xeon E3-1285 V6
 Xeon E5-1620
 Xeon E5-1620 V2
 Xeon E5-1620 V3
-Xeon E5-1620 V3
-Xeon E5-1620 V4
 Xeon E5-1620 V4
 Xeon E5-1630 V3
 Xeon E5-1630 V4
@@ -466,7 +367,6 @@ Xeon E5-1650 V2
 Xeon E5-1650 V3
 Xeon E5-1650 V4
 Xeon E5-1660
-Xeon E5-1660 V2
 Xeon E5-1660 V2
 Xeon E5-1660 V3
 Xeon E5-1680 V3
@@ -477,29 +377,20 @@ Xeon E5-2450V2
 Xeon E5-2470V2
 Xeon E5-2603
 Xeon E5-2603 V2
-Xeon E5-2603 V2
-Xeon E5-2603 V3
 Xeon E5-2603 V3
 Xeon E5-2603 V4
 Xeon E5-2609
-Xeon E5-2609
 Xeon E5-2609 V2
-Xeon E5-2609 V3
 Xeon E5-2609 V3
 Xeon E5-2609 V4
 Xeon E5-2620
-Xeon E5-2620
-Xeon E5-2620
 Xeon E5-2620 V2
-Xeon E5-2620 V3
 Xeon E5-2620 V3
 Xeon E5-2620 V4
 Xeon E5-2622 V3
 Xeon E5-2623 V3
 Xeon E5-2630
-Xeon E5-2630
 Xeon E5-2630 V2
-Xeon E5-2630 V3
 Xeon E5-2630 V3
 Xeon E5-2630 V4
 Xeon E5-2630L V2
@@ -508,7 +399,6 @@ Xeon E5-2637 V2
 Xeon E5-2637 V3
 Xeon E5-2640
 Xeon E5-2640 V2
-Xeon E5-2640 V3
 Xeon E5-2640 V3
 Xeon E5-2640 V4
 Xeon E5-2643 V2
@@ -526,9 +416,7 @@ Xeon E5-2658 V3
 Xeon E5-2660
 Xeon E5-2660 V2
 Xeon E5-2660 V3
-Xeon E5-2660 V3
 Xeon E5-2660 V4
-Xeon E5-2665
 Xeon E5-2665
 Xeon E5-2667 V2
 Xeon E5-2667 V3
@@ -540,9 +428,7 @@ Xeon E5-2680 V3
 Xeon E5-2680 V4
 Xeon E5-2683 V3
 Xeon E5-2683 V4
-Xeon E5-2683 V4
 Xeon E5-2685 V3
-Xeon E5-2687W
 Xeon E5-2687W
 Xeon E5-2687W V2
 Xeon E5-2687W V3
@@ -552,7 +438,6 @@ Xeon E5-2690 V2
 Xeon E5-2690 V3
 Xeon E5-2690 V4
 Xeon E5-2695 V2
-Xeon E5-2695 V3
 Xeon E5-2695 V3
 Xeon E5-2695 V4
 Xeon E5-2697 V2

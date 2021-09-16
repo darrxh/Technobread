@@ -1,22 +1,16 @@
 Athlon 200GE
-Athlon 200GE
 Athlon 220GE
-Athlon 220GE
-Athlon 240GE
 Athlon 240GE
 Athlon 3000G
 Athlon II X2 215
 Athlon II X2 220
 Athlon II X2 240
-Athlon II X2 240
 Athlon II X2 245
-Athlon II X2 255
 Athlon II X2 255
 Athlon II X2 260
 Athlon II X2 265
 Athlon II X2 270
 Athlon II X3 425
-Athlon II X3 435
 Athlon II X3 435
 Athlon II X3 440
 Athlon II X3 445
@@ -24,14 +18,9 @@ Athlon II X3 450
 Athlon II X3 455
 Athlon II X3 460
 Athlon II X4 620
-Athlon II X4 620
-Athlon II X4 630
-Athlon II X4 630
 Athlon II X4 630
 Athlon II X4 631
 Athlon II X4 635
-Athlon II X4 635
-Athlon II X4 640
 Athlon II X4 640
 Athlon II X4 641
 Athlon II X4 645
@@ -41,10 +30,8 @@ Athlon X4 880K
 Atom D2700
 Celeron 847
 Celeron E1400
-Celeron E1400
 Celeron E1500
 Celeron E3200
-Celeron E3300
 Celeron E3300
 Celeron E3400
 Celeron G1610
@@ -54,7 +41,6 @@ Celeron G1830
 Celeron G1840
 Celeron G1850
 Celeron G3900
-Celeron G3930
 Celeron G3930
 Celeron G3950
 Celeron G4900
@@ -77,7 +63,6 @@ Core i3-3220
 Core i3-3220T
 Core i3-3225
 Core i3-3240
-Core i3-3240
 Core i3-3250
 Core i3-4130
 Core i3-4130T
@@ -89,32 +74,21 @@ Core i3-4340
 Core i3-4350
 Core i3-4360
 Core i3-4370
-Core i3-4370
 Core i3-6098P
 Core i3-6100
-Core i3-6100
-Core i3-6100T
 Core i3-6100T
 Core i3-6300
 Core i3-6300T
 Core i3-6320
-Core i3-6320
 Core i3-7100
-Core i3-7100
-Core i3-7100T
 Core i3-7100T
 Core i3-7300
 Core i3-7300T
 Core i3-7320
-Core i3-7320
 Core i3-7350K
-Core i3-7350K
-Core i3-8100
 Core i3-8100
 Core i3-8100T
 Core i3-8300
-Core i3-8300
-Core i3-8350K
 Core i3-8350K
 Core i3-9100
 Core i3-9100F
@@ -153,7 +127,6 @@ Core i5-4460
 Core i5-4460S
 Core i5-4570
 Core i5-4570S
-Core i5-4570S
 Core i5-4570T
 Core i5-4590
 Core i5-4590S
@@ -161,60 +134,34 @@ Core i5-4670
 Core i5-4670K
 Core i5-4670S
 Core i5-4690
-Core i5-4690
-Core i5-4690K
 Core i5-4690K
 Core i5-5675C
 Core i5-6400
 Core i5-6500
-Core i5-6500
-Core i5-6600
 Core i5-6600
 Core i5-6600K
 Core i5-6600T
-Core i5-6600T
-Core i5-7400
 Core i5-7400
 Core i5-7400T
-Core i5-7400T
-Core i5-750
 Core i5-750
 Core i5-7500
-Core i5-7500
-Core i5-7500T
 Core i5-7500T
 Core i5-7600
-Core i5-7600
-Core i5-7600K
 Core i5-7600K
 Core i5-7600T
-Core i5-7600T
 Core i5-7640X
-Core i5-7640X
-Core i5-7640X
-Core i5-8400
 Core i5-8400
 Core i5-8400T
 Core i5-8500
-Core i5-8500
 Core i5-8500T
 Core i5-8600
-Core i5-8600
-Core i5-8600K
 Core i5-8600K
 Core i5-8600T
 Core i5-9400
-Core i5-9400
-Core i5-9400F
 Core i5-9400F
 Core i5-9500
-Core i5-9500
-Core i5-9600
 Core i5-9600
 Core i5-9600K
-Core i5-9600K
-Core i5-9600K
-Core i5-9600KF
 Core i5-9600KF
 Core i7-10700
 Core i7-10700F
@@ -231,15 +178,10 @@ Core i7-3820
 Core i7-3930K
 Core i7-4770
 Core i7-4770K
-Core i7-4770K
-Core i7-4770K
 Core i7-4770S
 Core i7-4770T
 Core i7-4771
 Core i7-4790
-Core i7-4790
-Core i7-4790K
-Core i7-4790K
 Core i7-4790K
 Core i7-4790S
 Core i7-4790T
@@ -250,54 +192,29 @@ Core i7-5820K
 Core i7-5930K
 Core i7-5960X
 Core i7-6700
-Core i7-6700
-Core i7-6700K
 Core i7-6700K
 Core i7-6700T
 Core i7-6800K
-Core i7-6800K
-Core i7-6800K
-Core i7-6850K
 Core i7-6850K
 Core i7-6900K
-Core i7-6900K
-Core i7-6900K
 Core i7-6950X
-Core i7-6950X
-Core i7-6950X
-Core i7-7700
 Core i7-7700
 Core i7-7700K
 Core i7-7700T
-Core i7-7700T
-Core i7-7740X
-Core i7-7740X
 Core i7-7740X
 Core i7-7800X
-Core i7-7800X
-Core i7-7800X
-Core i7-7820X
-Core i7-7820X
 Core i7-7820X
 Core i7-8086K
 Core i7-8700
-Core i7-8700
-Core i7-8700K
 Core i7-8700K
 Core i7-8700T
 Core i7-920
-Core i7-920
 Core i7-950
 Core i7-9700
-Core i7-9700
 Core i7-9700F
-Core i7-9700F
-Core i7-9700K
 Core i7-9700K
 Core i7-9700KF
 Core i7-9800X
-Core i7-9800X
-Core i9-10850K
 Core i9-10850K
 Core i9-10900
 Core i9-10900F
@@ -308,69 +225,44 @@ Core i9-10920X
 Core i9-10940X
 Core i9-10980XE
 Core i9-7900X
-Core i9-7900X
-Core i9-7900X
-Core i9-7920X
 Core i9-7920X
 Core i9-7940X
 Core i9-7960X
-Core i9-7960X
-Core i9-7980XE
 Core i9-7980XE
 Core i9-9820X
-Core i9-9820X
 Core i9-9900
-Core i9-9900
-Core i9-9900K
 Core i9-9900K
 Core i9-9900KF
 Core i9-9900KS
 Core i9-9900X
-Core i9-9900X
-Core i9-9920X
 Core i9-9920X
 Core i9-9940X
-Core i9-9940X
 Core i9-9960X
-Core i9-9960X
-Core i9-9980XE
 Core i9-9980XE
 FX-4100
 FX-4300
 FX-4350
 FX-6100
 FX-6300
-FX-6300
 FX-8120
 FX-8150
 FX-8300
-FX-8300
 FX-8310
 FX-8320
-FX-8320
 FX-8320E
-FX-8350
-FX-8350
 FX-8350
 FX-8370
 FX-8370E
 FX-9370
-FX-9370
-FX-9590
 FX-9590
 Pentium E5200
 Pentium E5300
-Pentium E5300
-Pentium E5400
 Pentium E5400
 Pentium E5500
 Pentium E5700
 Pentium E5800
 Pentium E6300
-Pentium E6300
 Pentium E6500
-Pentium E6500
-Pentium E6600
 Pentium E6600
 Pentium E6700
 Pentium E6800
@@ -383,28 +275,19 @@ Pentium G3220
 Pentium G3240
 Pentium G3250
 Pentium G3258
-Pentium G3258
 Pentium G3260
-Pentium G3420
 Pentium G3420
 Pentium G3430
 Pentium G3440
 Pentium G3450
 Pentium G3460
-Pentium G3460
 Pentium G3470
-Pentium G3470
-Pentium G4400
 Pentium G4400
 Pentium G4500
 Pentium G4520
-Pentium G4520
-Pentium G4560
 Pentium G4560
 Pentium G4560T
 Pentium G4600
-Pentium G4600
-Pentium G4620
 Pentium G4620
 Pentium G620
 Pentium G630
@@ -416,8 +299,6 @@ Pentium G850
 Pentium G860
 Pentium G870
 Pentium Gold G5400
-Pentium Gold G5400
-Pentium Gold G5500
 Pentium Gold G5500
 Pentium Gold G5600
 Pentium Gold G6400
@@ -439,16 +320,13 @@ Phenom II X4 955
 Phenom II X4 965
 Phenom II X4 970
 Phenom II X4 975
-Phenom II X4 975
 Phenom II X6 1035T
 Phenom II X6 1045T
-Phenom II X6 1055T
 Phenom II X6 1055T
 Phenom II X6 1075T
 Ryzen 3 1300X
 Ryzen 3 2200G
 Ryzen 3 3100
-Ryzen 3 3200G
 Ryzen 3 3200G
 Ryzen 3 3300X
 Ryzen 5 1400
@@ -456,46 +334,32 @@ Ryzen 5 1500X
 Ryzen 5 1600X
 Ryzen 5 2400G
 Ryzen 5 2600
-Ryzen 5 2600
 Ryzen 5 2600X
-Ryzen 5 2600X
-Ryzen 5 3400G
 Ryzen 5 3400G
 Ryzen 5 3500
 Ryzen 5 3500X
 Ryzen 5 3600
-Ryzen 5 3600
-Ryzen 5 3600X
 Ryzen 5 3600X
 Ryzen 5 3600XT
 Ryzen 5 5600X
 Ryzen 7 1700
 Ryzen 7 1700X
-Ryzen 7 1700X
 Ryzen 7 1800X
-Ryzen 7 1800X
-Ryzen 7 2700
 Ryzen 7 2700
 Ryzen 7 2700X
 Ryzen 7 3700X
-Ryzen 7 3700X
-Ryzen 7 3800X
 Ryzen 7 3800X
 Ryzen 7 3800XT
 Ryzen 7 5800X
 Ryzen 9 3900X
-Ryzen 9 3900X
 Ryzen 9 3900XT
-Ryzen 9 3950X
 Ryzen 9 3950X
 Ryzen 9 5900X
 Ryzen 9 5950X
 Sempron 140
 Sempron 145
-Sempron 145
 Xeon E3-1220 V2
 Xeon E3-1225 V2
-Xeon E3-1230 V2
 Xeon E3-1230 V2
 Xeon E3-1240
 Xeon E3-1240 V2

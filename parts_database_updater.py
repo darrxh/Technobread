@@ -34,6 +34,12 @@ def create_json():
 
     print ("coming soon")
 
+def has_duplicates(list):
+    for element in list:
+        if (list.count(element) > 1):
+            return True
+    return False
+
 def common_part_counter():
 
     with open("Data/cpu_Data_PCPP.json","r") as pcpp_data:
@@ -43,13 +49,9 @@ def common_part_counter():
         json_string_ub = ub_data.read()
         data_list_ub = json.loads(json_string_ub)
 
-    print ("Number of elements in UB: " + str(len(data_list_ub)))
-    print ("Number of elements in PCPP: " + str(len(data_list_pcpp)))
-
     ub_list = []
     pcpp_list = []
     common_list = []
-
     ub_remainders_list = []
     pcpp_remainders_list = []
 
@@ -57,8 +59,20 @@ def common_part_counter():
         pcpp_list.append(str(pcpp_index['model']))
     for ub_index in data_list_ub:
         ub_list.append(str(ub_index['Model']))
+
+    #Sort and remove duplicates
     ub_list.sort()
     pcpp_list.sort()
+    if (has_duplicates(ub_list) or has_duplicates(pcpp_list)):
+        ub_list = list(dict.fromkeys(ub_list))
+        pcpp_list = list(dict.fromkeys(pcpp_list))
+
+
+    print("Number of Elements in UB List:  " + str(len(ub_list)))
+    print("Number of Elements in PCPP List:   " + str(len(pcpp_list)))
+
+
+
 
     for ub_index in ub_list:
         for pcpp_index in pcpp_list:
@@ -72,9 +86,6 @@ def common_part_counter():
             common_cpu_list.write(str(part) + "\n")
 
 
-    print (len(ub_list))
-    print (len(pcpp_list))
-
     for pcpp_index in pcpp_list:
         is_different = True
         for common_index in common_list:
@@ -87,21 +98,6 @@ def common_part_counter():
     counter = 0
     counter2 = 0
     counter3 = 0
-    counter4 = 0
-    counter5 = 0
-
-    for i in ub_list:
-        for j in common_list:
-            if (i == j):
-                counter4 = counter4 + 1
-    print("Test: Number of elements in UB that match Common List:  " + str(counter4))
-
-    for i in pcpp_list:
-        for j in common_list:
-            if (i == j):
-                counter5 = counter5 + 1
-    print("Test: Number of elements in PCPP that match Common List:  " +  str(counter5))
-
 
     for ub_index in ub_list:
         is_different = True
