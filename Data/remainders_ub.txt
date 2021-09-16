@@ -853,25 +853,6 @@ U4100
 U7300
 V120
 V140
-Xeon E3-1220 v3
-Xeon E3-1220 v5
-Xeon E3-1225 v3
-Xeon E3-1226 v3
-Xeon E3-1230 v3
-Xeon E3-1230 v5
-Xeon E3-1230 v6
-Xeon E3-1231 v3
-Xeon E3-1240 v3
-Xeon E3-1241 v3
-Xeon E3-1245 v3
-Xeon E3-1245 v6
-Xeon E3-1246 v3
-Xeon E3-1265L v3
-Xeon E3-1270 v3
-Xeon E3-1270 v6
-Xeon E3-1271 v3
-Xeon E3-1275 v3
-Xeon E3-1276 v3
 Xeon E3-1286 v3
 Xeon E3-1505M v6
 Xeon E3110
@@ -881,22 +862,13 @@ Xeon E31230
 Xeon E31270
 Xeon E5-1603 0
 Xeon E5-1620 0
-Xeon E5-1620 v2
 Xeon E5-1650 0
-Xeon E5-1650 v2
-Xeon E5-1650 v3
 Xeon E5-2603 0
 Xeon E5-2609 0
 Xeon E5-2620 0
-Xeon E5-2620 v2
 Xeon E5-2630 0
-Xeon E5-2630 v3
 Xeon E5-2643 0
-Xeon E5-2660 v2
-Xeon E5-2670 v2
-Xeon E5-2680 v2
 Xeon E5-2687W 0
-Xeon E5-2690 v2
 Xeon E5310
 Xeon E5320
 Xeon E5335

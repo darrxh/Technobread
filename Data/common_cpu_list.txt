@@ -359,11 +359,39 @@ Ryzen 9 5950X
 Sempron 140
 Sempron 145
 Xeon E3-1220 V2
+Xeon E3-1220 v3
+Xeon E3-1220 v5
 Xeon E3-1225 V2
+Xeon E3-1225 v3
+Xeon E3-1226 v3
 Xeon E3-1230 V2
+Xeon E3-1230 v3
+Xeon E3-1230 v5
+Xeon E3-1230 v6
+Xeon E3-1231 v3
 Xeon E3-1240
 Xeon E3-1240 V2
+Xeon E3-1240 v3
+Xeon E3-1241 v3
 Xeon E3-1245 V2
+Xeon E3-1245 v3
+Xeon E3-1245 v6
+Xeon E3-1246 v3
+Xeon E3-1265L v3
 Xeon E3-1270 V2
+Xeon E3-1270 v3
+Xeon E3-1270 v6
+Xeon E3-1271 v3
 Xeon E3-1275 V2
+Xeon E3-1275 v3
+Xeon E3-1276 v3
+Xeon E5-1620 v2
+Xeon E5-1650 v2
+Xeon E5-1650 v3
+Xeon E5-2620 v2
+Xeon E5-2630 v3
+Xeon E5-2660 v2
 Xeon E5-2670
+Xeon E5-2670 v2
+Xeon E5-2680 v2
+Xeon E5-2690 v2

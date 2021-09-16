@@ -63,21 +63,20 @@ def common_part_counter():
     #Sort and remove duplicates
     ub_list.sort()
     pcpp_list.sort()
-    if (has_duplicates(ub_list) or has_duplicates(pcpp_list)):
-        ub_list = list(dict.fromkeys(ub_list))
-        pcpp_list = list(dict.fromkeys(pcpp_list))
+    ub_list = list(dict.fromkeys(ub_list))
+    pcpp_list = list(dict.fromkeys(pcpp_list))
 
 
     print("Number of Elements in UB List:  " + str(len(ub_list)))
     print("Number of Elements in PCPP List:   " + str(len(pcpp_list)))
 
-
-
-
     for ub_index in ub_list:
         for pcpp_index in pcpp_list:
-            if (ub_index == pcpp_index):
+            if (ub_index.lower() == pcpp_index.lower()):
                 common_list.append(str(ub_index))
+
+
+    print (has_duplicates(common_list))
 
     print ("Elements in common: " + str(len(common_list)))
 
@@ -104,17 +103,10 @@ def common_part_counter():
         for common_index in common_list:
             if (common_index == ub_index):
                 is_different = False
-                counter = counter + 1
         if (is_different):
             ub_remainders_list.append(ub_index)
-            counter2 = counter2 + 1
-        else:
-            counter3 = counter3 + 1
 
 
-    print (counter)
-    print (counter2)
-    print (counter3)
 
     print ("Remaining elements in UB file:  " + str(len(ub_remainders_list)))
     with open ("Data/remainders_ub.txt", "w") as remainders_ub:
