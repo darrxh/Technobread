@@ -72,6 +72,9 @@ def common_part_counter():
             common_cpu_list.write(str(part) + "\n")
 
 
+    print (len(ub_list))
+    print (len(pcpp_list))
+
     for pcpp_index in pcpp_list:
         is_different = True
         for common_index in common_list:
@@ -81,14 +84,41 @@ def common_part_counter():
             pcpp_remainders_list.append(pcpp_index)
 
 
+    counter = 0
+    counter2 = 0
+    counter3 = 0
+    counter4 = 0
+    counter5 = 0
+
+    for i in ub_list:
+        for j in common_list:
+            if (i == j):
+                counter4 = counter4 + 1
+    print("Test: Number of elements in UB that match Common List:  " + str(counter4))
+
+    for i in pcpp_list:
+        for j in common_list:
+            if (i == j):
+                counter5 = counter5 + 1
+    print("Test: Number of elements in PCPP that match Common List:  " +  str(counter5))
+
+
     for ub_index in ub_list:
         is_different = True
         for common_index in common_list:
             if (common_index == ub_index):
                 is_different = False
+                counter = counter + 1
         if (is_different):
             ub_remainders_list.append(ub_index)
+            counter2 = counter2 + 1
+        else:
+            counter3 = counter3 + 1
 
+
+    print (counter)
+    print (counter2)
+    print (counter3)
 
     print ("Remaining elements in UB file:  " + str(len(ub_remainders_list)))
     with open ("Data/remainders_ub.txt", "w") as remainders_ub:
