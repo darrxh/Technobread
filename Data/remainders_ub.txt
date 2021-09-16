@@ -1,0 +1,947 @@
+2140
+575
+A10-4600M APU
+A10-4655M APU
+A10-5700 APU (2012 D.Tr)
+A10-5745M APU
+A10-5750M APU
+A10-5757M APU
+A10-5800B APU (2012 D.Tr)
+A10-5800K APU (2012 D.Tr)
+A10-6700 APU (2013 D.Ri)
+A10-6700T APU (2013 D.Ri)
+A10-6790K APU (2013 D.Ri)
+A10-6800K APU (2013 D.Ri)
+A10-7300 APU (2014 M.Ka)
+A10-7400P APU (2014 M.Ka)
+A10-7700K APU (2014 D.Ka)
+A10-7800 APU (2014 D.Ka)
+A10-7850K APU (2014 D.Ka)
+A10-7860K APU (2014 D.Ka)
+A10-7870K APU (2014 D.Ka)
+A10-7890K APU (2014 D.Ka)
+A10-9600P APU (2016 M.BR)
+A10-9620P APU (2016 M.BR)
+A10-9630P APU (2016 M.BR)
+A10-9700 APU (2016 M.BR)
+A10-9700E APU (2016 D.BR)
+A12-9700P APU (2016 M.BR)
+A12-9720P APU (2016 M.BR)
+A12-9730P APU (2016 M.BR)
+A12-9800 APU (2016 M.BR)
+A12-9800E APU (2016 M.BR)
+A4-1200 APU
+A4-1250 APU
+A4-3300 APU
+A4-3300M APU
+A4-3305M APU
+A4-3330MX APU
+A4-3400 APU
+A4-4000 APU
+A4-4300M APU
+A4-4355M APU
+A4-5000 APU
+A4-5300 APU
+A4-6210 APU R3 Graphics
+A4-6300 APU
+A4-6320 APU
+A4-7210 APU (2015 M.Ca)
+A4-9120 APU (2016 M.SR)
+A6-3400M APU
+A6-3410MX APU
+A6-3420M APU
+A6-3500 APU
+A6-3620 APU
+A6-3650 APU
+A6-3670 APU
+A6-4400M APU
+A6-4455M APU
+A6-5200 APU
+A6-5400K APU
+A6-6400K APU
+A6-7000 APU (2014 M.Ka)
+A6-7310 APU (2015 M.Ca)
+A6-7400K APU (2014 D.Ka)
+A6-7470K APU (2014 D.Ka)
+A6-9200 APU (2016 M.SR)
+A6-9210 APU (2016 M.SR)
+A6-9220 APU (2016 M.SR)
+A6-9500 APU (2016 D.BR)
+A6-9500E APU (2016 D.BR)
+A8-3500M APU
+A8-3510MX APU
+A8-3520M APU
+A8-3530MX APU
+A8-3800 APU
+A8-3850 APU
+A8-3870 APU
+A8-4500M APU
+A8-4555M APU
+A8-5500 APU
+A8-5545M APU
+A8-5550M APU
+A8-5600K APU
+A8-6410 APU R5 Graphics
+A8-6500 APU
+A8-6600K APU
+A8-7100 APU (2014 M.Ka)
+A8-7200P APU (2014 M.Ka)
+A8-7410 APU (2015 M.Ca)
+A8-7500 APU (2014 M.Ka)
+A8-7600 APU (2014 D.Ka)
+A8-7650K APU (2014 D.Ka)
+A8-7670K APU (2014 D.Ka)
+A8-9600 APU (2016 D.BR)
+A9-9400 APU (2016 M.SR)
+A9-9410 APU (2016 M.SR)
+A9-9420 APU (2016 M.SR)
+A9-9425 APU (2016 M.SR)
+A9-9430 APU (2016 M.SR)
+Athlon 2650e
+Athlon 300U
+Athlon 5350 APU R3
+Athlon 64 3000+
+Athlon 64 3200+
+Athlon 64 3400+
+Athlon 64 3500+
+Athlon 64 3800+
+Athlon 64 4000+
+Athlon 64 X2 Dual Core 3600+
+Athlon 64 X2 Dual Core 3800+
+Athlon 64 X2 Dual Core 4000+
+Athlon 64 X2 Dual Core 4200+
+Athlon 64 X2 Dual Core 4400+
+Athlon 64 X2 Dual Core 4600+
+Athlon 64 X2 Dual Core 4800+
+Athlon 64 X2 Dual Core 5000+
+Athlon 64 X2 Dual Core 5200+
+Athlon 64 X2 Dual Core 5400+
+Athlon 64 X2 Dual Core 5600+
+Athlon 64 X2 Dual Core 6000+
+Athlon 64 X2 Dual Core 6400+
+Athlon 64 X2 Dual Core TK-53
+Athlon 64 X2 Dual Core TK-55
+Athlon 7750
+Athlon 7850
+Athlon Dual Core 4450B
+Athlon Dual Core 4450e
+Athlon Dual Core 4850e
+Athlon II M300
+Athlon II M320
+Athlon II P320
+Athlon II P340
+Athlon II P360
+Athlon II X2 250 (2013 D.Ri)
+Athlon II X2 B24
+Athlon II X4 555
+Athlon II X4 740K
+Athlon II X4 750K
+Athlon II X4 760K (2013 D.Ri)
+Athlon II X4 860K
+Athlon II X4 870K
+Athlon LE-1640
+Athlon Neo MV-40
+Athlon Neo X2 Dual Core L335
+Athlon X2 240
+Athlon X2 Dual Core BE-2300
+Athlon X2 Dual Core BE-2400
+Athlon X2 Dual-Core QL-64
+Athlon X2 Dual-Core QL-65
+AthlonX2 DualCore QL-60
+Atom 230
+Atom 330
+Atom D410
+Atom D510
+Atom D525
+Atom N2600
+Atom N270
+Atom N280
+Atom N2800
+Atom N435
+Atom N450
+Atom N455
+Atom N550
+Atom N570
+Atom Z2760
+Atom Z3740
+Atom Z3740D
+Atom Z3770
+Atom Z3775
+Atom Z520
+Atom x5-Z8300
+Atom x5-Z8330
+Atom x5-Z8350
+Atom x5-Z8500
+Atom x5-Z8550
+Atom x7-Z8700
+Atom x7-Z8750
+C-50
+C-60 APU
+Celeron 1000M
+Celeron 1005M
+Celeron 1007U
+Celeron 1017U
+Celeron 1037U
+Celeron 2.80GHz
+Celeron 2957U
+Celeron 3205U
+Celeron 723
+Celeron 877
+Celeron 887
+Celeron 900
+Celeron B800
+Celeron B815
+Celeron B820
+Celeron B830
+Celeron D 3.06GHz
+Celeron Dual Core T3100
+Celeron Dual Core T3300
+Celeron G550
+Celeron J1900
+Celeron J3355
+Celeron J3455
+Celeron J4005
+Celeron J4105
+Celeron M 430
+Celeron M processor 1.50GHz
+Celeron N2815
+Celeron N2820
+Celeron N2830
+Celeron N2840
+Celeron N2920
+Celeron N2930
+Celeron N3000
+Celeron N3010
+Celeron N3050
+Celeron N3060
+Celeron N3150
+Celeron N3160
+Celeron N3350
+Celeron N3450
+Celeron N4000
+Celeron N4020
+Celeron N4100
+Core Duo T2350
+Core M-5Y10
+Core M-5Y10a
+Core M-5Y10c
+Core M-5Y31
+Core M-5Y51
+Core M-5Y70
+Core M-5Y71
+Core X 920
+Core i3 530
+Core i3 540
+Core i3 550
+Core i3 M 330
+Core i3 M 350
+Core i3 M 370
+Core i3 M 380
+Core i3 M 390
+Core i3 U 330
+Core i3 U 380
+Core i3-1005G1
+Core i3-10100T
+Core i3-10105F
+Core i3-10110U
+Core i3-10300T
+Core i3-1115G4
+Core i3-2310M
+Core i3-2328M
+Core i3-2330M
+Core i3-2348M
+Core i3-2350M
+Core i3-2357M
+Core i3-2365M
+Core i3-2367M
+Core i3-2370M
+Core i3-2375M
+Core i3-3110M
+Core i3-3120M
+Core i3-3217U
+Core i3-3227U
+Core i3-4000M
+Core i3-4005U
+Core i3-4010U
+Core i3-4012Y
+Core i3-4030U
+Core i3-5005U
+Core i3-5010U
+Core i3-5015U
+Core i3-6006U
+Core i3-6100U
+Core i3-6157U
+Core i3-6167U
+Core i3-7020U
+Core i3-7100U
+Core i3-7101E
+Core i3-7130U
+Core i3-7167U
+Core i3-8109U
+Core i3-8130U
+Core i3-8145U
+Core i5 650
+Core i5 660
+Core i5 661
+Core i5 680
+Core i5 760
+Core i5 K 655
+Core i5 M 430
+Core i5 M 450
+Core i5 M 460
+Core i5 M 480
+Core i5 M 520
+Core i5 M 540
+Core i5 M 560
+Core i5 M 580
+Core i5 U 470
+Core i5-10200H
+Core i5-10210U
+Core i5-10210Y
+Core i5-10300H
+Core i5-10310U
+Core i5-1035G1
+Core i5-1035G4
+Core i5-1035G7
+Core i5-10400H
+Core i5-10400T
+Core i5-10500H
+Core i5-10500T
+Core i5-10600T
+Core i5-11300H
+Core i5-1130G7
+Core i5-1135G7
+Core i5-11400
+Core i5-11400F
+Core i5-1145G7
+Core i5-11500
+Core i5-11600
+Core i5-11600K
+Core i5-11600KF
+Core i5-2410M
+Core i5-2415M
+Core i5-2430M
+Core i5-2435M
+Core i5-2450M
+Core i5-2467M
+Core i5-2500S
+Core i5-2520M
+Core i5-2537M
+Core i5-2540M
+Core i5-2557M
+Core i5-3210M
+Core i5-3230M
+Core i5-3317U
+Core i5-3320M
+Core i5-3337U
+Core i5-3339Y
+Core i5-3340M
+Core i5-3380M
+Core i5-3427U
+Core i5-3437U
+Core i5-3470T
+Core i5-3475S
+Core i5-4200H
+Core i5-4200M
+Core i5-4200U
+Core i5-4202Y
+Core i5-4210M
+Core i5-4210U
+Core i5-4210Y
+Core i5-4250U
+Core i5-4258U
+Core i5-4300M
+Core i5-4300U
+Core i5-4300Y
+Core i5-4310U
+Core i5-4570R
+Core i5-5200U
+Core i5-5250U
+Core i5-5257U
+Core i5-5287U
+Core i5-5300U
+Core i5-6200U
+Core i5-6260U
+Core i5-6300HQ
+Core i5-6300U
+Core i5-7200U
+Core i5-7260U
+Core i5-7300HQ
+Core i5-7300U
+Core i5-7Y54
+Core i5-8200Y
+Core i5-8210Y
+Core i5-8250U
+Core i5-8259U
+Core i5-8265U
+Core i5-8279U
+Core i5-8300H
+Core i5-8305G
+Core i5-8350U
+Core i5-8365U
+Core i5-8400H
+Core i5-9300H
+Core i5-9400H
+Core i7 860
+Core i7 870
+Core i7 880
+Core i7 930
+Core i7 940
+Core i7 960
+Core i7 970
+Core i7 975
+Core i7 980
+Core i7 K 875
+Core i7 L 620
+Core i7 L 640
+Core i7 M 620
+Core i7 M 640
+Core i7 Q 720
+Core i7 Q 740
+Core i7 Q 820
+Core i7 Q 840
+Core i7 X 920
+Core i7 X 940
+Core i7 X 980
+Core i7 X 990
+Core i7-10510U
+Core i7-10510Y
+Core i7-1065G7
+Core i7-10700T
+Core i7-10710U
+Core i7-10750H
+Core i7-10850H
+Core i7-10870H
+Core i7-10875H
+Core i7-11370H
+Core i7-11375H
+Core i7-1160G7
+Core i7-1165G7
+Core i7-11700
+Core i7-11700F
+Core i7-11700K
+Core i7-11700KF
+Core i7-11800H
+Core i7-11850H
+Core i7-1185G7
+Core i7-2620M
+Core i7-2630QM
+Core i7-2635QM
+Core i7-2637M
+Core i7-2640M
+Core i7-2670QM
+Core i7-2675QM
+Core i7-2677M
+Core i7-2720QM
+Core i7-2760QM
+Core i7-2820QM
+Core i7-2860QM
+Core i7-2920XM
+Core i7-2960XM
+Core i7-3517U
+Core i7-3520M
+Core i7-3537U
+Core i7-3540M
+Core i7-3610QM
+Core i7-3612QM
+Core i7-3615QM
+Core i7-3630QM
+Core i7-3632QM
+Core i7-3635QM
+Core i7-3667U
+Core i7-3687U
+Core i7-3689Y
+Core i7-3720QM
+Core i7-3740QM
+Core i7-3820QM
+Core i7-3840QM
+Core i7-3920XM
+Core i7-3940XM
+Core i7-3960X
+Core i7-3970X
+Core i7-4500U
+Core i7-4510U
+Core i7-4550U
+Core i7-4558U
+Core i7-4600M
+Core i7-4600U
+Core i7-4610M
+Core i7-4650U
+Core i7-4700HQ
+Core i7-4700MQ
+Core i7-4702HQ
+Core i7-4702MQ
+Core i7-4710HQ
+Core i7-4710MQ
+Core i7-4712HQ
+Core i7-4720HQ
+Core i7-4722HQ
+Core i7-4750HQ
+Core i7-4770HQ
+Core i7-4800MQ
+Core i7-4810MQ
+Core i7-4850HQ
+Core i7-4900MQ
+Core i7-4910MQ
+Core i7-4930MX
+Core i7-4940MX
+Core i7-4960HQ
+Core i7-4960X
+Core i7-5500U
+Core i7-5550U
+Core i7-5557U
+Core i7-5600U
+Core i7-5650U
+Core i7-5700HQ
+Core i7-5775R
+Core i7-5850HQ
+Core i7-5950HQ
+Core i7-6500U
+Core i7-6567U
+Core i7-6600U
+Core i7-6650U
+Core i7-6700HQ
+Core i7-6820HK
+Core i7-6820HQ
+Core i7-6920HQ
+Core i7-7500U
+Core i7-7560U
+Core i7-7567U
+Core i7-7600U
+Core i7-7660U
+Core i7-7700HQ
+Core i7-7820HK
+Core i7-7820HQ
+Core i7-7920HQ
+Core i7-7Y75
+Core i7-8500Y
+Core i7-8550U
+Core i7-8559U
+Core i7-8565U
+Core i7-8650U
+Core i7-8665U
+Core i7-8705G
+Core i7-8706G
+Core i7-8750H
+Core i7-8809G
+Core i7-8850H
+Core i7-9750H
+Core i7-9850H
+Core i9-10885H
+Core i9-10900T
+Core i9-10980HK
+Core i9-11900
+Core i9-11900F
+Core i9-11900H
+Core i9-11900K
+Core i9-11900KF
+Core i9-11950H
+Core i9-11980HK
+Core i9-8950HK
+Core i9-9880H
+Core i9-9980HK
+Core m3-6Y30
+Core m3-7Y30
+Core m3-7Y32
+Core m3-8100Y
+Core m5-6Y54
+Core m5-6Y57
+Core m7-6Y75
+Core2 4300
+Core2 4400
+Core2 6300
+Core2 6320
+Core2 6400
+Core2 6420
+Core2 6600
+Core2 6700
+Core2 Duo E4400
+Core2 Duo E4500
+Core2 Duo E4600
+Core2 Duo E4700
+Core2 Duo E6550
+Core2 Duo E6750
+Core2 Duo E6850
+Core2 Duo E7200
+Core2 Duo E7300
+Core2 Duo E7400
+Core2 Duo E7500
+Core2 Duo E7600
+Core2 Duo E8200
+Core2 Duo E8300
+Core2 Duo E8400
+Core2 Duo E8500
+Core2 Duo E8600
+Core2 Duo L7100
+Core2 Duo L7500
+Core2 Duo L9300
+Core2 Duo L9400
+Core2 Duo L9600
+Core2 Duo P7350
+Core2 Duo P7450
+Core2 Duo P7550
+Core2 Duo P7570
+Core2 Duo P8400
+Core2 Duo P8600
+Core2 Duo P8700
+Core2 Duo P8800
+Core2 Duo P9300
+Core2 Duo P9400
+Core2 Duo P9500
+Core2 Duo P9600
+Core2 Duo P9700
+Core2 Duo T5250
+Core2 Duo T5450
+Core2 Duo T5550
+Core2 Duo T5670
+Core2 Duo T5750
+Core2 Duo T5800
+Core2 Duo T5850
+Core2 Duo T5870
+Core2 Duo T5900
+Core2 Duo T6400
+Core2 Duo T6500
+Core2 Duo T6570
+Core2 Duo T6600
+Core2 Duo T6670
+Core2 Duo T7100
+Core2 Duo T7250
+Core2 Duo T7300
+Core2 Duo T7500
+Core2 Duo T7700
+Core2 Duo T8100
+Core2 Duo T8300
+Core2 Duo T9300
+Core2 Duo T9400
+Core2 Duo T9500
+Core2 Duo T9550
+Core2 Duo T9600
+Core2 Duo T9800
+Core2 Duo T9900
+Core2 Duo U9400
+Core2 Duo U9600
+Core2 Extreme Q6850
+Core2 Extreme Q9300
+Core2 Extreme X9100
+Core2 Extreme X9650
+Core2 Extreme X9770
+Core2 Quad
+Core2 Quad Q6600
+Core2 Quad Q6700
+Core2 Quad Q8200
+Core2 Quad Q8300
+Core2 Quad Q8400
+Core2 Quad Q9000
+Core2 Quad Q9300
+Core2 Quad Q9400
+Core2 Quad Q9450
+Core2 Quad Q9500
+Core2 Quad Q9505
+Core2 Quad Q9550
+Core2 Quad Q9650
+Core2 T5200
+Core2 T5300
+Core2 T5500
+Core2 T5600
+Core2 T7200
+Core2 T7400
+Core2 T7600
+Core2 X6800
+E-300 APU
+E-350
+E-350D APU
+E-450 APU
+E1-1200 APU
+E1-2100 APU
+E1-2500 APU
+E1-7010 APU (2015 M.Ca)
+E2-1800 APU (2012 M.Za)
+E2-2000 APU (2012 M.Za)
+E2-3000M APU
+E2-7110 APU (2015 M.Ca)
+E2-9000 APU (2016 M.SR)
+E2-9000e APU (2016 M.SR)
+E2-9010 APU (2016 M.SR)
+FX-4130 Quad-Core
+FX-4170 Quad-Core
+FX-6120 Six-Core
+FX-6200 Six-Core
+FX-6350 Six-Core
+FX-7500 APU (2014 M.Ka)
+FX-7600P APU (2014 M.Ka)
+FX-770K (2014 D.Ka)
+FX-9800P APU (2016 M.BR)
+FX-9830P APU (2016 M.BR)
+Opteron 4171 HE
+Pentium 2020M
+Pentium 2117U
+Pentium 2127U
+Pentium 3550M
+Pentium 3805U
+Pentium 4 2.40GHz
+Pentium 4 2.60GHz
+Pentium 4 2.66GHz
+Pentium 4 2.80GHz
+Pentium 4 2.93GHz
+Pentium 4 3.00GHz
+Pentium 4 3.06GHz
+Pentium 4 3.20GHz
+Pentium 4 3.40GHz
+Pentium 4 3.80GHz
+Pentium 4405U
+Pentium 4405Y
+Pentium 4410Y
+Pentium 4415U
+Pentium 4417U
+Pentium 5405U
+Pentium 967
+Pentium 987
+Pentium B940
+Pentium B950
+Pentium B960
+Pentium B970
+Pentium B980
+Pentium D 2.66GHz
+Pentium D 2.80GHz
+Pentium D 3.00GHz
+Pentium D 3.20GHz
+Pentium D 3.40GHz
+Pentium D 3.73GHz
+Pentium Dual E2140
+Pentium Dual E2160
+Pentium Dual E2180
+Pentium Dual E2200
+Pentium Dual T2310
+Pentium Dual T2330
+Pentium Dual T2370
+Pentium Dual T2390
+Pentium Dual T3200
+Pentium Dual T3400
+Pentium G5400T
+Pentium G5500T
+Pentium Gold 4415Y
+Pentium Gold 4425Y
+Pentium J2900
+Pentium J4205
+Pentium M processor 1.60GHz
+Pentium M processor 1.73GHz
+Pentium M processor 1.86GHz
+Pentium N3510
+Pentium N3520
+Pentium N3530
+Pentium N3540
+Pentium N3700
+Pentium N3710
+Pentium N4200
+Pentium P6100
+Pentium P6200
+Pentium Silver J5005
+Pentium Silver N5000
+Pentium T4200
+Pentium T4300
+Pentium T4400
+Pentium T4500
+Phenom 9150e
+Phenom 9500
+Phenom 9550
+Phenom 9600
+Phenom 9650
+Phenom 9750
+Phenom 9850
+Phenom 9950
+Phenom II N660
+Phenom II N830
+Phenom II N850
+Phenom II N930
+Phenom II N950
+Phenom II P940
+Phenom II P960
+Phenom II X2 555
+Phenom II X2 560
+Phenom II X2 565
+Phenom II X4 20
+Phenom II X4 840T
+Phenom II X4 850
+Phenom II X4 940
+Phenom II X4 960T
+Phenom II X4 980
+Phenom II X4 B40
+Phenom II X4 B45
+Phenom II X4 B50
+Phenom II X4 B55
+Phenom II X4 B60
+Phenom II X4 B65
+Phenom II X6 1090T
+Phenom II X6 1100T
+Phenom X3 8450
+Phenom X3 8650
+Ryzen 3 1200
+Ryzen 3 2200U
+Ryzen 3 2300U
+Ryzen 3 3200U
+Ryzen 3 3300U
+Ryzen 3 4300U
+Ryzen 5 1600
+Ryzen 5 1600AF
+Ryzen 5 2500U
+Ryzen 5 2500X
+Ryzen 5 2600H
+Ryzen 5 3500U
+Ryzen 5 3550H
+Ryzen 5 4500U
+Ryzen 5 4600H
+Ryzen 5 4600HS
+Ryzen 5 4600U
+Ryzen 5 5600G
+Ryzen 5 5600H
+Ryzen 5 5600U
+Ryzen 7 2700U
+Ryzen 7 2800H
+Ryzen 7 3700U
+Ryzen 7 3750H
+Ryzen 7 4700G
+Ryzen 7 4700U
+Ryzen 7 4800H
+Ryzen 7 4800HS
+Ryzen 7 4800U
+Ryzen 7 5700G
+Ryzen 7 5700U
+Ryzen 7 5800
+Ryzen 7 5800H
+Ryzen 7 5800HS
+Ryzen 7 5800U
+Ryzen 9 4900H
+Ryzen 9 4900HS
+Ryzen 9 4900U
+Ryzen 9 5900
+Ryzen 9 5900HS
+Ryzen 9 5900HX
+Ryzen 9 5980HS
+Ryzen TR 1900X
+Ryzen TR 1920X
+Ryzen TR 1950X
+Ryzen TR 2920X
+Ryzen TR 2950X
+Ryzen TR 2970WX
+Ryzen TR 2990WX
+Ryzen TR 3960X
+Ryzen TR 3970X
+Ryzen TR 3990X
+Sempron 2800+
+Sempron 3000+
+Sempron 3400+
+Sempron 3600+
+T2080
+T2250
+T2300
+T2400
+T2500
+T2600
+Turion 64 Mobile Technology ML-32
+Turion 64 X2 Mobile Technology TL-52
+Turion 64 X2 Mobile Technology TL-56
+Turion 64 X2 Mobile Technology TL-58
+Turion 64 X2 Mobile Technology TL-60
+Turion II Mobile M500
+Turion II Neo N40L
+Turion II Neo N54L
+Turion II Ultra Mobile M600
+Turion X2 Dual-Core Mobile RM-70
+Turion X2 Ultra Mobile ZM-82
+U2300
+U4100
+U7300
+V120
+V140
+Xeon E3-1220 v3
+Xeon E3-1220 v5
+Xeon E3-1225 v3
+Xeon E3-1226 v3
+Xeon E3-1230 v3
+Xeon E3-1230 v5
+Xeon E3-1230 v6
+Xeon E3-1231 v3
+Xeon E3-1240 v3
+Xeon E3-1241 v3
+Xeon E3-1245 v3
+Xeon E3-1245 v6
+Xeon E3-1246 v3
+Xeon E3-1265L v3
+Xeon E3-1270 v3
+Xeon E3-1270 v6
+Xeon E3-1271 v3
+Xeon E3-1275 v3
+Xeon E3-1276 v3
+Xeon E3-1286 v3
+Xeon E3-1505M v6
+Xeon E3110
+Xeon E31220
+Xeon E31225
+Xeon E31230
+Xeon E31270
+Xeon E5-1603 0
+Xeon E5-1620 0
+Xeon E5-1620 v2
+Xeon E5-1650 0
+Xeon E5-1650 v2
+Xeon E5-1650 v3
+Xeon E5-2603 0
+Xeon E5-2609 0
+Xeon E5-2620 0
+Xeon E5-2620 v2
+Xeon E5-2630 0
+Xeon E5-2630 v3
+Xeon E5-2643 0
+Xeon E5-2660 v2
+Xeon E5-2670 v2
+Xeon E5-2680 v2
+Xeon E5-2687W 0
+Xeon E5-2690 v2
+Xeon E5310
+Xeon E5320
+Xeon E5335
+Xeon E5345
+Xeon E5405
+Xeon E5420
+Xeon E5430
+Xeon E5440
+Xeon E5450
+Xeon E5462
+Xeon E5472
+Xeon E5504
+Xeon E5506
+Xeon E5507
+Xeon E5520
+Xeon E5530
+Xeon E5540
+Xeon E5620
+Xeon E7- 4870
+Xeon L5420
+Xeon L5520
+Xeon L5639
+Xeon W3503
+Xeon W3505
+Xeon W3520
+Xeon W3530
+Xeon W3550
+Xeon W3565
+Xeon W3570
+Xeon W3680
+Xeon W3690
+Xeon X3220
+Xeon X3430
+Xeon X3440
+Xeon X3450
+Xeon X3460
+Xeon X3470
+Xeon X5450
+Xeon X5460
+Xeon X5470
+Xeon X5472
+Xeon X5560
+Xeon X5570
+Xeon X5650
+Xeon X5660
+Xeon X5667
+Xeon X5690
+Z-60 APU

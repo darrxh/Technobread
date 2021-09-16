@@ -38,99 +38,6 @@ Athlon II X4 645
 Athlon II X4 651
 Athlon X4 845
 Athlon X4 880K
-FX-4100
-FX-4300
-FX-4350
-FX-6100
-FX-6300
-FX-6300
-FX-8120
-FX-8150
-FX-8300
-FX-8300
-FX-8310
-FX-8320
-FX-8320
-FX-8320E
-FX-8350
-FX-8350
-FX-8350
-FX-8370
-FX-8370E
-FX-9370
-FX-9370
-FX-9590
-FX-9590
-Phenom II X2 545
-Phenom II X2 550
-Phenom II X3 710
-Phenom II X3 720
-Phenom II X4 810
-Phenom II X4 830
-Phenom II X4 840
-Phenom II X4 905e
-Phenom II X4 910e
-Phenom II X4 920
-Phenom II X4 925
-Phenom II X4 945
-Phenom II X4 955
-Phenom II X4 965
-Phenom II X4 970
-Phenom II X4 975
-Phenom II X4 975
-Phenom II X6 1035T
-Phenom II X6 1045T
-Phenom II X6 1055T
-Phenom II X6 1055T
-Phenom II X6 1075T
-Ryzen 3 1300X
-Ryzen 3 2200G
-Ryzen 3 3100
-Ryzen 3 3200G
-Ryzen 3 3200G
-Ryzen 3 3300X
-Ryzen 5 1400
-Ryzen 5 1500X
-Ryzen 5 1600X
-Ryzen 5 2400G
-Ryzen 5 2600
-Ryzen 5 2600
-Ryzen 5 2600X
-Ryzen 5 2600X
-Ryzen 5 3400G
-Ryzen 5 3400G
-Ryzen 5 3500
-Ryzen 5 3500X
-Ryzen 5 3600
-Ryzen 5 3600
-Ryzen 5 3600X
-Ryzen 5 3600X
-Ryzen 5 3600XT
-Ryzen 5 5600X
-Ryzen 7 1700
-Ryzen 7 1700X
-Ryzen 7 1700X
-Ryzen 7 1800X
-Ryzen 7 1800X
-Ryzen 7 2700
-Ryzen 7 2700
-Ryzen 7 2700X
-Ryzen 7 3700X
-Ryzen 7 3700X
-Ryzen 7 3800X
-Ryzen 7 3800X
-Ryzen 7 3800XT
-Ryzen 7 5800X
-Ryzen 9 3900X
-Ryzen 9 3900X
-Ryzen 9 3900XT
-Ryzen 9 3950X
-Ryzen 9 3950X
-Ryzen 9 5900X
-Ryzen 9 5950X
-Sempron 140
-Sempron 145
-Sempron 145
 Atom D2700
 Celeron 847
 Celeron E1400
@@ -428,6 +335,29 @@ Core i9-9960X
 Core i9-9960X
 Core i9-9980XE
 Core i9-9980XE
+FX-4100
+FX-4300
+FX-4350
+FX-6100
+FX-6300
+FX-6300
+FX-8120
+FX-8150
+FX-8300
+FX-8300
+FX-8310
+FX-8320
+FX-8320
+FX-8320E
+FX-8350
+FX-8350
+FX-8350
+FX-8370
+FX-8370E
+FX-9370
+FX-9370
+FX-9590
+FX-9590
 Pentium E5200
 Pentium E5300
 Pentium E5300
@@ -493,6 +423,76 @@ Pentium Gold G5600
 Pentium Gold G6400
 Pentium Gold G6500
 Pentium Gold G6600
+Phenom II X2 545
+Phenom II X2 550
+Phenom II X3 710
+Phenom II X3 720
+Phenom II X4 810
+Phenom II X4 830
+Phenom II X4 840
+Phenom II X4 905e
+Phenom II X4 910e
+Phenom II X4 920
+Phenom II X4 925
+Phenom II X4 945
+Phenom II X4 955
+Phenom II X4 965
+Phenom II X4 970
+Phenom II X4 975
+Phenom II X4 975
+Phenom II X6 1035T
+Phenom II X6 1045T
+Phenom II X6 1055T
+Phenom II X6 1055T
+Phenom II X6 1075T
+Ryzen 3 1300X
+Ryzen 3 2200G
+Ryzen 3 3100
+Ryzen 3 3200G
+Ryzen 3 3200G
+Ryzen 3 3300X
+Ryzen 5 1400
+Ryzen 5 1500X
+Ryzen 5 1600X
+Ryzen 5 2400G
+Ryzen 5 2600
+Ryzen 5 2600
+Ryzen 5 2600X
+Ryzen 5 2600X
+Ryzen 5 3400G
+Ryzen 5 3400G
+Ryzen 5 3500
+Ryzen 5 3500X
+Ryzen 5 3600
+Ryzen 5 3600
+Ryzen 5 3600X
+Ryzen 5 3600X
+Ryzen 5 3600XT
+Ryzen 5 5600X
+Ryzen 7 1700
+Ryzen 7 1700X
+Ryzen 7 1700X
+Ryzen 7 1800X
+Ryzen 7 1800X
+Ryzen 7 2700
+Ryzen 7 2700
+Ryzen 7 2700X
+Ryzen 7 3700X
+Ryzen 7 3700X
+Ryzen 7 3800X
+Ryzen 7 3800X
+Ryzen 7 3800XT
+Ryzen 7 5800X
+Ryzen 9 3900X
+Ryzen 9 3900X
+Ryzen 9 3900XT
+Ryzen 9 3950X
+Ryzen 9 3950X
+Ryzen 9 5900X
+Ryzen 9 5950X
+Sempron 140
+Sempron 145
+Sempron 145
 Xeon E3-1220 V2
 Xeon E3-1225 V2
 Xeon E3-1230 V2

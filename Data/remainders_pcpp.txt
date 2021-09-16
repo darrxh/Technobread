@@ -95,79 +95,6 @@ Athlon X4 870K
 Athlon X4 940
 Athlon X4 950
 Athlon X4 970
-E-Series E-450
-E2-3200
-FX-4130
-FX-4150
-FX-4170
-FX-4200
-FX-4320
-FX-6120
-FX-6130
-FX-6200
-FX-6350
-FX-8100
-FX-8140
-Opteron 4386
-Opteron 6320
-Opteron 6320
-Opteron 6328
-Opteron 6328
-Opteron 6344
-Opteron 6344
-Opteron 6378
-Opteron 6378
-Phenom II X2 550 Black
-Phenom II X2 555 Black
-Phenom II X2 560 Black
-Phenom II X2 565 Black
-Phenom II X2 B59
-Phenom II X3 705e
-Phenom II X3 715 Black
-Phenom II X3 720 Black
-Phenom II X3 740 Black
-Phenom II X4 805
-Phenom II X4 820
-Phenom II X4 910
-Phenom II X4 940 Black
-Phenom II X4 955 Black
-Phenom II X4 960T Black
-Phenom II X4 965 Black
-Phenom II X4 965 Black (140W)
-Phenom II X4 970 Black
-Phenom II X4 980 Black
-Phenom II X4 B99
-Phenom II X6 1065T
-Phenom II X6 1090T Black
-Phenom II X6 1100T Black
-Pro A10-7800B
-Pro A10-7850B
-Pro A4-7300B
-Pro A6-7400B
-Pro A8-7600B
-Ryzen 3 1200 (12nm)
-Ryzen 3 1200 (14nm)
-Ryzen 5 1600 (12nm)
-Ryzen 5 1600 (14nm)
-Sempron 130
-Sempron 150
-Sempron X2 190
-Sempron X2 198
-Sempron X2 250
-Threadripper 1900X
-Threadripper 1920X
-Threadripper 1950X
-Threadripper 2920X
-Threadripper 2920X
-Threadripper 2950X
-Threadripper 2950X
-Threadripper 2970WX
-Threadripper 2970WX
-Threadripper 2990WX
-Threadripper 2990WX
-Threadripper 3960X
-Threadripper 3970X
-Threadripper 3990X
 Atom D2500
 Celeron 420
 Celeron 420
@@ -348,6 +275,28 @@ Core i7-990X Extreme Edition
 Core i9-10850KA Avengers Limited Edition
 Core i9-9900K (Standard Folding Box)
 Core i9-9900T
+E-Series E-450
+E2-3200
+FX-4130
+FX-4150
+FX-4170
+FX-4200
+FX-4320
+FX-6120
+FX-6130
+FX-6200
+FX-6350
+FX-8100
+FX-8140
+Opteron 4386
+Opteron 6320
+Opteron 6320
+Opteron 6328
+Opteron 6328
+Opteron 6344
+Opteron 6344
+Opteron 6378
+Opteron 6378
 Pentium E2140
 Pentium E2140
 Pentium E2160
@@ -369,6 +318,57 @@ Pentium G640T
 Pentium Gold G5400T
 Pentium Gold G5420
 Pentium Gold G5500T
+Phenom II X2 550 Black
+Phenom II X2 555 Black
+Phenom II X2 560 Black
+Phenom II X2 565 Black
+Phenom II X2 B59
+Phenom II X3 705e
+Phenom II X3 715 Black
+Phenom II X3 720 Black
+Phenom II X3 740 Black
+Phenom II X4 805
+Phenom II X4 820
+Phenom II X4 910
+Phenom II X4 940 Black
+Phenom II X4 955 Black
+Phenom II X4 960T Black
+Phenom II X4 965 Black
+Phenom II X4 965 Black (140W)
+Phenom II X4 970 Black
+Phenom II X4 980 Black
+Phenom II X4 B99
+Phenom II X6 1065T
+Phenom II X6 1090T Black
+Phenom II X6 1100T Black
+Pro A10-7800B
+Pro A10-7850B
+Pro A4-7300B
+Pro A6-7400B
+Pro A8-7600B
+Ryzen 3 1200 (12nm)
+Ryzen 3 1200 (14nm)
+Ryzen 5 1600 (12nm)
+Ryzen 5 1600 (14nm)
+Sempron 130
+Sempron 150
+Sempron X2 190
+Sempron X2 198
+Sempron X2 250
+Threadripper 1900X
+Threadripper 1920X
+Threadripper 1950X
+Threadripper 2920X
+Threadripper 2920X
+Threadripper 2950X
+Threadripper 2950X
+Threadripper 2970WX
+Threadripper 2970WX
+Threadripper 2990WX
+Threadripper 2990WX
+Threadripper 3960X
+Threadripper 3970X
+Threadripper 3990X
 Xeon E-2104G
 Xeon E-2124
 Xeon E-2124
