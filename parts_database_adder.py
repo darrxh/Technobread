@@ -169,7 +169,7 @@ class Case:
 
 def append_component(new_part):
     print ("Adding component...")
-    with open('Logs/database_adder_error_log.txt', 'a') as database:
+    with open('Data/', 'a') as database:
         json_string = json.dumps(new_part.__dict__)
         database.write(json_string + "\n")
     print ("Component added! \n")
