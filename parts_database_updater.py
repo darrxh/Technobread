@@ -8,8 +8,10 @@ parts_list = ['cpu',
               'memory',
               'motherboard',
               'case',
-              'power-supply'
-              ]
+              'power-supply',
+              'ssd',
+              'hhd',
+              'monitor']
 
 
 def pcpp_data_update():
