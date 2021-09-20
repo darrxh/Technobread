@@ -1,4 +1,5 @@
 import json
+import re
 from pcpartpicker import API
 
 api = API()
@@ -13,6 +14,22 @@ parts_list = ['cpu',
               'hhd',
               'monitor']
 
+#Takes string, removes all spaces and special characters/returns all letters in uppercase
+def simplify_string(part_name):
+    part_name = part_name.upper()
+    simple_name = re.sub("[ -().]", "", part_name)
+    return simple_name
+
+def threadripper_matcher(cpu_name):
+
+    cpu_name = simplify_string(cpu_name)
+    if ("THREADRIPPER" in cpu_name):
+        model_number = cpu_name.replace("THREADRIPPER", "")
+    elif ("RYZENTR" in cpu_name):
+        model_number = cpu_name.replace("RYZENTR", "")
+
+    cpu_name = "Ryzen Threadripper" + model_number
+    return cpu_name
 
 def pcpp_data_update():
 
@@ -41,6 +58,7 @@ def has_duplicates(list):
         if (list.count(element) > 1):
             return True
     return False
+
 
 def common_part_counter():
 
@@ -94,11 +112,6 @@ def common_part_counter():
                 is_different = False
         if (is_different):
             pcpp_remainders_list.append(pcpp_index)
-
-
-    counter = 0
-    counter2 = 0
-    counter3 = 0
 
     for ub_index in ub_list:
         is_different = True
