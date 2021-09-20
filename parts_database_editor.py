@@ -37,7 +37,6 @@ class Cpu:
         self.price = int(input("Price?     "))
         self.wattage = int(input("Wattage? TDP?      "))
 
-
 class Gpu:
     def __init__(self):
         #Base info variables
@@ -227,6 +226,8 @@ def ub_data_update():
     print ("coming soon")
 
 def create_json():
+
+    
 
 
 
