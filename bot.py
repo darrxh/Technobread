@@ -36,18 +36,6 @@ class userpc:
         self.ram.model = ram_input
 
 
-class cpu:
-    def __init__(self, model="N/A"):
-        self.model = model
-
-class gpu:
-    def __init__(self, model="N/A"):
-        self.model = model
-
-class ram:
-    def __init__(self, model="N/A"):
-        self.model = model
-
 """
 class mobo:
     def __init__(self):
