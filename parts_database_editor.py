@@ -340,15 +340,25 @@ def manual_add_part():
             append_component(new_mobo)
 
         elif (part_category == 'ssd'):
-            add_ssd()
+            new_ssd = Ssd()
+            new_ssd.add_ssd()
+            append_component(new_ssd)
         elif (part_category == 'hdd'):
-            add_hdd()
+            new_hdd = Hdd()
+            new_hdd.add_hdd()
+            append_component(new_hdd)
         elif (part_category == 'psu'):
-            add_psu()
+            new_psu = Psu()
+            new_psu.add_psu()
+            append_component(new_psu)
         elif (part_category == 'case'):
-            add_case()
+            new_case = Case()
+            new_case.add_case()
+            append_component(new_case)
         elif (part_category == 'monitor'):
-            add_monitor()
+            new_monitor = Monitor()
+            new_monitor.add_monitor()
+            append_component(new_monitor)
         elif (part_category == '')
 
         else:
