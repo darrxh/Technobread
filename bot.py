@@ -4,8 +4,6 @@ client = discord.Client()
 
 fake_database = dict()
 
-#cpu="N/A",gpu="N/A",ram="N/A",mobo="N/A",storage="N/A",thermal="N/A",case="N/A",psu="N/A"
-
 
 
 class userpc:
@@ -36,21 +34,7 @@ class userpc:
         self.ram.model = ram_input
 
 
-"""
-class mobo:
-    def __init__(self):
 
-class storage:
-    def __init__(self):
-
-"""
-
-
-
-ram_brand_list = ["Corsair","G.Skill","HyperX","Crucial","Kingston","TeamGroup"]
-cpu_brand_list = ["AMD","Intel"]
-gpu_brand_list = ["Nvidia","AMD"]
-mobo_brand_list = ["Asrock","Asus","MSI"]
 
 
 def has_pc(user):

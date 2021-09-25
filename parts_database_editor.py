@@ -178,9 +178,15 @@ parts_list = ['cpu',
               'power-supply',
               'ssd',
               'hhd',
-              'monitor']
+              'monitor',
+              'cooler']
 
 
+
+ram_brand_list = ["Corsair","G.Skill","HyperX","Crucial","Kingston","TeamGroup"]
+cpu_brand_list = ["AMD","Intel"]
+gpu_brand_list = ["Nvidia","AMD"]
+mobo_brand_list = ["Asrock","Asus","MSI"]
 
 def append_component(new_part):
     print ("Adding component...")
