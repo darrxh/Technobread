@@ -60,10 +60,6 @@ def part_exists(category, part_name):
         # <--
 
 
-
-
-
-
 def has_pc(user):
     for index in fake_database:
         if (user == index):
