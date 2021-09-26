@@ -1,10 +1,10 @@
 import discord
+import json
+import re
 
 client = discord.Client()
 
 fake_database = dict()
-
-#cpu="N/A",gpu="N/A",ram="N/A",mobo="N/A",storage="N/A",thermal="N/A",case="N/A",psu="N/A"
 
 
 
@@ -35,34 +35,29 @@ class userpc:
 
         self.ram.model = ram_input
 
-
-class cpu:
-    def __init__(self, model="N/A"):
-        self.model = model
-
-class gpu:
-    def __init__(self, model="N/A"):
-        self.model = model
-
-class ram:
-    def __init__(self, model="N/A"):
-        self.model = model
-
-"""
-class mobo:
-    def __init__(self):
-
-class storage:
-    def __init__(self):
-
-"""
+def simplify_string(part_name):
+    part_name = str(part_name.upper())
+    simple_name = re.sub("[ -().]", "", part_name)
+    return simple_name
 
 
+def part_exists(category, part_name):
 
-ram_brand_list = ["Corsair","G.Skill","HyperX","Crucial","Kingston","TeamGroup"]
-cpu_brand_list = ["AMD","Intel"]
-gpu_brand_list = ["Nvidia","AMD"]
-mobo_brand_list = ["Asrock","Asus","MSI"]
+    part_name = simplify_string(part_name)
+    with open("Data/" + str(category) + "_Data.json", "r") as database:
+        database_string = database.read()
+        parts_list = json.loads(database_string)
+
+
+        #refactor? -->
+
+        for part_index in parts_list:
+            if (part_name == part_index["id"]):
+                return True
+            else:
+                return False
+
+        # <--
 
 
 def has_pc(user):
@@ -118,6 +113,41 @@ async def on_message(message):
             """)
         else:
             await message.channel.send("You do not have a PC added to your profile")
+
+
+
+
+
+
+
+    elif (msg.startswith('$addcpu')):
+        if (has_pc(client.user.id)):
+
+
+        else:
+            await message.channel.send("You have no PC on your profile to add parts to.")
+
+
+    elif (msg.startswith('$addgpu')):
+        if (has_pc(client.user.id)):
+
+
+        else:
+            await message.channel.send("You have no PC on your profile to add parts to.")
+
+
+    elif (msg.startswith('$addram')):
+        if (has_pc(client.user.id)):
+
+
+        else:
+            await message.channel.send("You have no PC on your profile to add parts to.")
+
+
+
+
+
+
 
     elif (msg.startswith('$removepc')):
         if (has_pc(client.user.id)):
