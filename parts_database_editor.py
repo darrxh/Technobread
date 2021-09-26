@@ -220,7 +220,7 @@ def pcpp_data_update():
         part_object = api.retrieve(part)
         print ("Part object retrieved... \n creating JSON text")
         json_text = part_object.to_json()
-        with open("Data/" + part + "_Data_PCPP.json","w") as database:
+        with open("Data/" + str(part) + "_Data_PCPP.json","w") as database:
             print ("Creating/Writing text file...")
             database.write(json_text + "\n")
             print ("Write successful")

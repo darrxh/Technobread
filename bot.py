@@ -1,4 +1,6 @@
 import discord
+import json
+import re
 
 client = discord.Client()
 
@@ -32,6 +34,31 @@ class userpc:
     def changeram(self, ram_input):
 
         self.ram.model = ram_input
+
+def simplify_string(part_name):
+    part_name = str(part_name.upper())
+    simple_name = re.sub("[ -().]", "", part_name)
+    return simple_name
+
+
+def part_exists(category, part_name):
+
+    part_name = simplify_string(part_name)
+    with open("Data/" + str(category) + "_Data.json", "r") as database:
+        database_string = database.read()
+        parts_list = json.loads(database_string)
+
+
+        #refactor? -->
+
+        for part_index in parts_list:
+            if (part_name == part_index["id"]):
+                return True
+            else:
+                return False
+
+        # <--
+
 
 
 
@@ -90,6 +117,41 @@ async def on_message(message):
             """)
         else:
             await message.channel.send("You do not have a PC added to your profile")
+
+
+
+
+
+
+
+    elif (msg.startswith('$addcpu')):
+        if (has_pc(client.user.id)):
+
+
+        else:
+            await message.channel.send("You have no PC on your profile to add parts to.")
+
+
+    elif (msg.startswith('$addgpu')):
+        if (has_pc(client.user.id)):
+
+
+        else:
+            await message.channel.send("You have no PC on your profile to add parts to.")
+
+
+    elif (msg.startswith('$addram')):
+        if (has_pc(client.user.id)):
+
+
+        else:
+            await message.channel.send("You have no PC on your profile to add parts to.")
+
+
+
+
+
+
 
     elif (msg.startswith('$removepc')):
         if (has_pc(client.user.id)):
