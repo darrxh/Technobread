@@ -372,9 +372,7 @@ def manual_add_part():
 
 
 
-
-
-common_part_counter()
-
+def main():
+    print ("")
 
 
