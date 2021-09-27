@@ -231,10 +231,6 @@ def ub_data_update():
 
     print ("coming soon")
 
-def create_json():
-
-
-
 
 
 def has_duplicates(list):

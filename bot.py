@@ -23,25 +23,13 @@ class userpc:
 
         return [self.cpu.model, self.gpu.model, self.ram.model]
 
-    def changecpu(self, cpu_input):
-
-        self.cpu.model = cpu_input
-
-    def changegpu(self, gpu_input):
-
-        self.gpu.model = gpu_input
-
-    def changeram(self, ram_input):
-
-        self.ram.model = ram_input
-
 def simplify_string(part_name):
     part_name = str(part_name.upper())
     simple_name = re.sub("[ -().]", "", part_name)
     return simple_name
 
 
-def part_exists(category, part_name):
+def part_return(category, part_name):
 
     part_name = simplify_string(part_name)
     with open("Data/" + str(category) + "_Data.json", "r") as database:
@@ -53,11 +41,19 @@ def part_exists(category, part_name):
 
         for part_index in parts_list:
             if (part_name == part_index["id"]):
-                return True
-            else:
-                return False
+                return part_index
+
+
 
         # <--
+def add_part(category, part_name):
+    if (part_exists(category, part_name)):
+
+
+    else:
+        return
+
+
 
 
 def has_pc(user):
