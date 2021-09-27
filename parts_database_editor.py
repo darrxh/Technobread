@@ -371,7 +371,7 @@ def manual_add_part():
                 log.write(now + ":  Error \n")
 
 
-#test for git key
+#test for git key number 2
 
 def main():
     print ("")
