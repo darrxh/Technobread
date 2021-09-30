@@ -4,6 +4,17 @@ import json
 
 api = API()
 
+parts_list = ['cpu',
+              'video-card',
+              'memory',
+              'motherboard',
+              'case',
+              'power-supply',
+              'ssd',
+              'hhd',
+              'monitor',
+              'cooler']
+
 
 
 class Cpu:
@@ -170,23 +181,19 @@ class Case:
         self.type = str(input("Model?    "))
         self.price = int(input("Price?    "))
 
-parts_list = ['cpu',
-              'video-card',
-              'memory',
-              'motherboard',
-              'case',
-              'power-supply',
-              'ssd',
-              'hhd',
-              'monitor',
-              'cooler']
 
 
+def brand_verify(part_category, part_name):
+    ram_brand_list = ["Corsair", "G.Skill", "HyperX", "Crucial", "Kingston", "TeamGroup"]
+    cpu_brand_list = ["AMD", "Intel"]
+    gpu_brand_list = ["Nvidia", "AMD"]
+    mobo_brand_list = ["Asrock", "Asus", "MSI"]
+    case_brand_list = ["Corsair", "Lian Li", "NZXT", "Gigabyte", "Antec"]
 
-ram_brand_list = ["Corsair","G.Skill","HyperX","Crucial","Kingston","TeamGroup"]
-cpu_brand_list = ["AMD","Intel"]
-gpu_brand_list = ["Nvidia","AMD"]
-mobo_brand_list = ["Asrock","Asus","MSI"]
+    if (part_name in brand_list):
+        return True
+    else:
+        return False
 
 def append_component(new_part):
     print ("Adding component...")
@@ -315,8 +322,12 @@ def common_part_counter():
 
 def manual_add_part():
     while True:
-        print("Which part to add(input x to exit)? CPU | GPU | RAM | MOBO | SSD | HDD | PSU | CASE \n")
-        part_category = str(input()).lower()
+        print ("Which part to add(input number above part | x to exit)?\n")
+        print (" 1  |  2  |  3  |  4   |  5  |  6  |  7  |   8")
+        print ("CPU | GPU | RAM | MOBO | SSD | HDD | PSU | CASE")
+
+        part_category = int(input())
+
         if (part_category == 'x'):
             print ("Program exited.")
             break
@@ -361,8 +372,6 @@ def manual_add_part():
             new_monitor = Monitor()
             new_monitor.add_monitor()
             append_component(new_monitor)
-        elif (part_category == '')
-
         else:
             print ("Invalid entry")
             with open('Logs/database_adder_error_log.txt','a') as log:
