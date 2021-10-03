@@ -4,6 +4,11 @@ import json
 
 api = API()
 
+#Global lists
+ram_brand_list = ["Corsair","G.Skill","HyperX","Crucial","Kingston","TeamGroup"]
+cpu_brand_list = ["AMD","Intel"]
+gpu_brand_list = ["Nvidia","AMD"]
+mobo_brand_list = ["Asrock","Asus","MSI"]
 
 
 class Cpu:
@@ -183,11 +188,6 @@ parts_list = ['cpu',
 
 
 
-ram_brand_list = ["Corsair","G.Skill","HyperX","Crucial","Kingston","TeamGroup"]
-cpu_brand_list = ["AMD","Intel"]
-gpu_brand_list = ["Nvidia","AMD"]
-mobo_brand_list = ["Asrock","Asus","MSI"]
-
 def append_component(new_part):
     print ("Adding component...")
     with open('Data/', 'a') as database:
@@ -201,6 +201,8 @@ def simplify_string(part_name):
     part_name = part_name.upper()
     simple_name = re.sub("[ -().]", "", part_name)
     return simple_name
+
+
 
 def threadripper_match(cpu_name):
 
@@ -369,9 +371,6 @@ def manual_add_part():
                 now = datetime.now()
                 now = str(now)
                 log.write(now + ":  Error \n")
-
-
-#LAST TEST FOR KEY
 
 def main():
     print ("")
