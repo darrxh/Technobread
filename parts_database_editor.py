@@ -182,6 +182,84 @@ class Case:
 
 
 
+def manual_add_part():
+    while True:
+        print ("Which part to add(input number above part | 0 to exit)?\n")
+        print (" 1  |  2  |  3  |  4   |  5  |  6  |  7  |   8")
+        print ("CPU | GPU | RAM | MOBO | SSD | HDD | PSU | CASE")
+
+        category_index = int(input())
+
+        category_dict = {0:"cpu"
+                         1:"cpu"
+                         2:"gpu"
+                         3:"ram"
+                         4:"mobo"
+                         5:"ssd"
+                         6:"hdd"
+                         7:"psu"
+                         8:"case"}
+
+        category_dict[category_index]()
+
+        append_component(new_part, category_index)
+
+        #Refactor below
+        """
+            
+        if (part_category == 'x'):
+            print ("Program exited.")
+            break
+
+        elif (part_category == 'cpu'):
+            new_cpu = Cpu()
+            new_cpu.add_cpu()
+            append_component(new_cpu)
+
+        elif (part_category == 'gpu'):
+            new_gpu = Gpu()
+            new_gpu.add_gpu()
+            append_component(new_gpu)
+
+        elif (part_category == 'ram'):
+            new_ram = Ram()
+            new_ram.add_ram()
+            append_component(new_ram)
+
+        elif (part_category == 'mobo'):
+            new_mobo = Mobo()
+            new_mobo.add_mobo()
+            append_component(new_mobo)
+
+        elif (part_category == 'ssd'):
+            new_ssd = Ssd()
+            new_ssd.add_ssd()
+            append_component(new_ssd)
+        elif (part_category == 'hdd'):
+            new_hdd = Hdd()
+            new_hdd.add_hdd()
+            append_component(new_hdd)
+        elif (part_category == 'psu'):
+            new_psu = Psu()
+            new_psu.add_psu()
+            append_component(new_psu)
+        elif (part_category == 'case'):
+            new_case = Case()
+            new_case.add_case()
+            append_component(new_case)
+        elif (part_category == 'monitor'):
+            new_monitor = Monitor()
+            new_monitor.add_monitor()
+            append_component(new_monitor)
+        else:
+            print ("Invalid entry")
+            with open('Logs/database_adder_error_log.txt','a') as log:
+                now = datetime.now()
+                now = str(now)
+                log.write(now + ":  Error \n")
+        """
+
+
 def brand_verify(part_category, part_name):
     ram_brand_list = ["Corsair", "G.Skill", "HyperX", "Crucial", "Kingston", "TeamGroup"]
     cpu_brand_list = ["AMD", "Intel"]
@@ -191,8 +269,8 @@ def brand_verify(part_category, part_name):
 
     if (part_name in brand_list):
         return True
-    else:
-        return False
+
+    return False
 
 def append_component(new_part):
     print ("Adding component...")
@@ -321,66 +399,9 @@ def common_part_counter():
         for part in pcpp_remainders_list:
             remainders_pcpp.write(str(part) + "\n")
 
-def manual_add_part():
-    while True:
-        print ("Which part to add(input number above part | x to exit)?\n")
-        print (" 1  |  2  |  3  |  4   |  5  |  6  |  7  |   8")
-        print ("CPU | GPU | RAM | MOBO | SSD | HDD | PSU | CASE")
 
-        part_category = int(input())
-
-        if (part_category == 'x'):
-            print ("Program exited.")
-            break
-
-        elif (part_category == 'cpu'):
-            new_cpu = Cpu()
-            new_cpu.add_cpu()
-            append_component(new_cpu)
-
-        elif (part_category == 'gpu'):
-            new_gpu = Gpu()
-            new_gpu.add_gpu()
-            append_component(new_gpu)
-
-        elif (part_category == 'ram'):
-            new_ram = Ram()
-            new_ram.add_ram()
-            append_component(new_ram)
-
-        elif (part_category == 'mobo'):
-            new_mobo = Mobo()
-            new_mobo.add_mobo()
-            append_component(new_mobo)
-
-        elif (part_category == 'ssd'):
-            new_ssd = Ssd()
-            new_ssd.add_ssd()
-            append_component(new_ssd)
-        elif (part_category == 'hdd'):
-            new_hdd = Hdd()
-            new_hdd.add_hdd()
-            append_component(new_hdd)
-        elif (part_category == 'psu'):
-            new_psu = Psu()
-            new_psu.add_psu()
-            append_component(new_psu)
-        elif (part_category == 'case'):
-            new_case = Case()
-            new_case.add_case()
-            append_component(new_case)
-        elif (part_category == 'monitor'):
-            new_monitor = Monitor()
-            new_monitor.add_monitor()
-            append_component(new_monitor)
-        else:
-            print ("Invalid entry")
-            with open('Logs/database_adder_error_log.txt','a') as log:
-                now = datetime.now()
-                now = str(now)
-                log.write(now + ":  Error \n")
 
 def main():
-    
+
 
 
