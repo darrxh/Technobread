@@ -33,7 +33,7 @@ class Cpu:
         self.price = "N/A"
         self.wattage = "N/A"
 
-    def add_cpu(self):
+    def _add_new(self):
         self.brand = str(input("Brand?  "))
         self.model = str(input("Model?  "))
         self.cores = int(input("Number of Cores?    "))
@@ -46,6 +46,9 @@ class Cpu:
         self.url = str(input("URL?     "))
         self.price = int(input("Price?     "))
         self.wattage = int(input("Wattage? TDP?      "))
+
+    def identify_category(self):
+        return "cpu"
 
 class Gpu:
     def __init__(self):
@@ -60,7 +63,7 @@ class Gpu:
         self.price = "N/A"
         self.wattage = "N/A"
 
-    def add_gpu(self):
+    def _add_new(self):
         self.brand = str(input("Brand?  "))
         self.model = str(input("Model?  "))
         self.vram = int(input("Video Memory?    "))
@@ -70,6 +73,8 @@ class Gpu:
         self.price = int(input("Price?      "))
         self.wattage = int(input("Wattage? TDP?     "))
 
+    def identify_category(self):
+        return "gpu"
 
 class Ram:
     def __init__(self):
@@ -83,7 +88,7 @@ class Ram:
         self.url = "N/A"
         self.price = "N/A"
 
-    def add_ram(self):
+    def _add_new(self):
         self.brand = str(input("Brand?    "))
         self.model = str(input("Model?    "))
         self.size = int(input("Size GB?     "))
@@ -91,6 +96,9 @@ class Ram:
         self.benchmark = int(input("Benchmark %?    "))
         self.url = str(input("Pcpartpicker Link?     "))
         self.price = int(input("Price?     "))
+
+    def identify_category(self):
+        return "ram"
 
 
 class Mobo:
@@ -103,12 +111,15 @@ class Mobo:
         self.url = "N/A"
         self.price = "N/A"
 
-    def add_mobo(self):
+    def _add_new(self):
         self.brand = str(input("Brand?    "))
         self.model = str(input("Model?     "))
         self.form_factor = str(input("Form factor?    "))
         self.url = str(input("Pcpartpicker Link?     "))
         self.price = int(input("Price?     "))
+
+    def identify_category(self):
+        return "mobo"
 
 class Ssd:
     def __init__(self):
@@ -121,13 +132,16 @@ class Ssd:
         self.price = "N/A"
         self.benchmark = "N/A"
 
-    def add_ssd(self):
+    def _add_new(self):
         self.brand = str(input("Brand?    "))
         self.model = str(input("Model?    "))
         self.size = int(input("Capacity? (GB)   "))
         self.speed = int(input("Speed (MB/s)    "))
         self.price = int(input("Price?    "))
         self.benchmark = int(input("Benchmark %?   "))
+
+    def identify_category(self):
+        return "ssd"
 
 class Psu:
     def __init__(self):
@@ -139,7 +153,7 @@ class Psu:
         self.price = "N/A"
         self.date = "N/A"
 
-    def add_psu(self):
+    def _add_new(self):
         self.brand = str(input("Brand?    "))
         self.model = str(input("Model?    "))
         self.wattage = int(input("Wattage?   "))
@@ -147,6 +161,9 @@ class Psu:
         self.eff_rating = str(input("Efficiency rating?    "))
         self.price = int(input("Price?    "))
         self.date = str(input("Date?     "))
+
+    def identify_category(self):
+        return "psu"
 
 class Monitor:
     def __init__(self):
@@ -158,7 +175,7 @@ class Monitor:
         self.price = "N/A"
         self.date = "N/A"
 
-    def add_monitor(self):
+    def _add_new(self):
         self.brand = str(input("Brand?    "))
         self.size = int(input("Size?     "))
         self.refresh = int(input("Refresh rate?     "))
@@ -167,6 +184,9 @@ class Monitor:
         self.price = int(input("Price?    "))
         self.date = str(input("Date?    "))
 
+    def identify_category(self):
+        return "monitor"
+
 class Case:
     def __init__(self):
         self.brand = "N/A"
@@ -174,17 +194,24 @@ class Case:
         self.type = "N/A"
         self.price = "N/A"
 
-    def add_case(self):
+    def _add_new(self):
         self.brand = str(input("Brand?    "))
         self.model = str(input("Model?    "))
         self.type = str(input("Model?    "))
         self.price = int(input("Price?    "))
 
+    def identify_category(self):
+        return "case"
 
 
+def append_part(part):
 
-def append_component():
-
+    category = part.identify_category()
+    with open("Data/main_data/" + category + "_data.json", "a") as database:
+        print ("Appending component... \n")
+        json_string = json.dumps(part.__dict__)
+        database.write(json_string + "\n")
+        print ("Component added! \n")
 
 
 def ask_for_category():
@@ -207,66 +234,27 @@ def ask_for_category():
 
 def manual_add_part():
 
-    category_dict = {1: "cpu"
-                     2: "gpu"
-                     3: "ram"
-                     4: "mobo"
-                     5: "ssd"
-                     6: "hdd"
-                     7: "psu"
-                     8: "case"}
+    category_dict = {1: Cpu(),
+                     2: Gpu(),
+                     3: Ram(),
+                     4: Mobo(),
+                     5: Ssd(),
+                     6: Hdd(),
+                     7: Psu(),
+                     8: Case()}
 
     while True:
         category_key = ask_for_category() #Function to prompt user for input corresponding to category dict key
-        if (category_key == 0):  #pass and exit function if user inputs and function returns 0
+        if (category_key != 0):  #pass and exit function if user inputs and function returns 0
+            new_part = category_dict[category_key] #create instance of corresponding parts
+            new_part._add_new()
+            append_part(new_part)
+        else:    #Hmmm, is it better to include else statement to make pass the last line in function? Or is it better to move it up as inverse of != 0 to exclude else condition?
             print("Exiting Manual Add.")
             pass
 
-        append_component(category_dict[category_key])
 
-        """
 
-        elif (part_category == 'cpu'):
-            new_cpu = Cpu()
-            new_cpu.add_cpu()
-            append_component(new_cpu)
-
-        elif (part_category == 'gpu'):
-            new_gpu = Gpu()
-            new_gpu.add_gpu()
-            append_component(new_gpu)
-
-        elif (part_category == 'ram'):
-            new_ram = Ram()
-            new_ram.add_ram()
-            append_component(new_ram)
-
-        elif (part_category == 'mobo'):
-            new_mobo = Mobo()
-            new_mobo.add_mobo()
-            append_component(new_mobo)
-
-        elif (part_category == 'ssd'):
-            new_ssd = Ssd()
-            new_ssd.add_ssd()
-            append_component(new_ssd)
-        elif (part_category == 'hdd'):
-            new_hdd = Hdd()
-            new_hdd.add_hdd()
-            append_component(new_hdd)
-        elif (part_category == 'psu'):
-            new_psu = Psu()
-            new_psu.add_psu()
-            append_component(new_psu)
-        elif (part_category == 'case'):
-            new_case = Case()
-            new_case.add_case()
-            append_component(new_case)
-        elif (part_category == 'monitor'):
-            new_monitor = Monitor()
-            new_monitor.add_monitor()
-            append_component(new_monitor)
-        """
 
 
 def brand_verify(part_category, part_name):
@@ -280,13 +268,6 @@ def brand_verify(part_category, part_name):
         return True
 
     return False
-
-def append_component(new_part):
-    print ("Adding component...")
-    with open('Data/', 'a') as database:
-        json_string = json.dumps(new_part.__dict__)
-        database.write(json_string + "\n")
-    print ("Component added! \n")
 
 
 #Takes string, removes all spaces and special characters/returns all letters in uppercase
@@ -307,18 +288,18 @@ def threadripper_match(cpu_name):
 
     cpu_name = "Ryzen Threadripper" + model_number
     return cpu_name
-
+"""
 def pcpp_data_update():
 
     for part in parts_list:
         print ("Retrieving " + part + " object...")
         part_object = api.retrieve(part)
-        print ("Part object retrieved... \n creating JSON text")
+        print ("Part object retrieved... \n creating JSON text"
         json_text = part_object.to_json()
         with open("Data/" + str(part) + "_Data_PCPP.json","w") as database:
-            print ("Creating/Writing text file...")
-            database.write(json_text + "\n")
-            print ("Write successful")
+            print ("Crea,ting/Writing text file...")
+            database.writ,e(json_text + "\n")
+            print ("Write ,successful")
 
     print ("PcPartPicker Parts files updated")
 
@@ -333,7 +314,7 @@ def has_duplicates(list):
         if (list.count(element) > 1):
             return True
     return False
-
+"""
 
 def common_part_counter():
 
@@ -411,6 +392,6 @@ def common_part_counter():
 
 
 def main():
+    manual_add_part()
 
-
-
+main()
