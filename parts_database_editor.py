@@ -182,34 +182,49 @@ class Case:
 
 
 
-def manual_add_part():
+
+def append_component():
+
+
+
+def ask_for_category():
     while True:
-        print ("Which part to add(input number above part | 0 to exit)?\n")
-        print (" 1  |  2  |  3  |  4   |  5  |  6  |  7  |   8")
-        print ("CPU | GPU | RAM | MOBO | SSD | HDD | PSU | CASE")
+        print("Which part to add(input number above part | 0 to exit)?\n 1  |  2  |  3  |  4   |  5  |  6  |  7  |   8\nCPU | GPU | RAM | MOBO | SSD | HDD | PSU | CASE")
+        try:
+            category_index = int(input()) #Ask for user to input int between 0 and number of categories in database
+            if (category_index > 8 or category_index < 0):
+                raise ValueError #Raise ValueError if number inputted is not between 0 and number of categories in database
+        except ValueError:
+            print("Error: Enter an Integer within the options.")    #Specify valueerror, reiterate to try again
+        except Exception as other_error:
+            print(other_error)
+            with open('Logs/parts_database_errors.log', 'a') as log:    #Write to logs if different error occurs
+                log.write(str(datetime.now()) + ":  " + other_error + "\n")
+                log.close()
+        else:
+            return category_index
 
-        category_index = int(input())
 
-        category_dict = {0:"cpu"
-                         1:"cpu"
-                         2:"gpu"
-                         3:"ram"
-                         4:"mobo"
-                         5:"ssd"
-                         6:"hdd"
-                         7:"psu"
-                         8:"case"}
+def manual_add_part():
 
-        category_dict[category_index]()
+    category_dict = {1: "cpu"
+                     2: "gpu"
+                     3: "ram"
+                     4: "mobo"
+                     5: "ssd"
+                     6: "hdd"
+                     7: "psu"
+                     8: "case"}
 
-        append_component(new_part, category_index)
+    while True:
+        category_key = ask_for_category() #Function to prompt user for input corresponding to category dict key
+        if (category_key == 0):  #pass and exit function if user inputs and function returns 0
+            print("Exiting Manual Add.")
+            pass
 
-        #Refactor below
+        append_component(category_dict[category_key])
+
         """
-            
-        if (part_category == 'x'):
-            print ("Program exited.")
-            break
 
         elif (part_category == 'cpu'):
             new_cpu = Cpu()
@@ -251,12 +266,6 @@ def manual_add_part():
             new_monitor = Monitor()
             new_monitor.add_monitor()
             append_component(new_monitor)
-        else:
-            print ("Invalid entry")
-            with open('Logs/database_adder_error_log.txt','a') as log:
-                now = datetime.now()
-                now = str(now)
-                log.write(now + ":  Error \n")
         """
 
 
