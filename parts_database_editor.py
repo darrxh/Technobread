@@ -1,8 +1,8 @@
 import re
-from pcpartpicker import API
+#from pcpartpicker import API
 import json
 
-api = API()
+#api = API()
 
 parts_list = ['cpu',
               'video-card',
@@ -18,28 +18,17 @@ parts_list = ['cpu',
 
 class Cpu:
     def __init__(self):
-        #Base info variables
-        self.brand ="N/A"
-        self.model ="N/A"
-        self.cores ="N/A"
-        self.threads ="N/A"
-        self.base_clock ="N/A"
-        self.boost_clock = "N/A"
-        #Extra info variables
-        self.release_date ="N/A"
-        self.benchmark_percentage ="N/A"
-        self.integrated_graphics = "N/A"
-        self.url = "N/A"
-        self.price = "N/A"
-        self.wattage = "N/A"
+        self.category = "cpu"
 
-    def _add_new(self):
+    def add_inputs(self):
+        #Base info variables
         self.brand = str(input("Brand?  "))
         self.model = str(input("Model?  "))
         self.cores = int(input("Number of Cores?    "))
         self.threads = int(input("Number of Threads?    "))
         self.base_clock = float(input("Base clock speed?     "))
         self.boost_clock = float(input("Boost Clock speed?     "))
+        #Extra info variables
         self.release_date = str(input("Release Quarter?  (Q* ****     "))
         self.benchmark_percentage = int(input("Benchmark percentage?    "))
         self.integrated_graphics = bool(input("Integrated Graphics? True or False   "))
@@ -47,172 +36,129 @@ class Cpu:
         self.price = int(input("Price?     "))
         self.wattage = int(input("Wattage? TDP?      "))
 
-    def identify_category(self):
-        return "cpu"
-
 class Gpu:
     def __init__(self):
-        #Base info variables
-        self.brand ="N/A"
-        self.model ="N/A"
-        self.vram ="N/A"
-        #Extra info variables
-        self.benchmark ="N/A"
-        self.url = "N/A"
-        self.base_clock = "N/A"
-        self.price = "N/A"
-        self.wattage = "N/A"
+        self.category = "gpu"
 
-    def _add_new(self):
+    def add_inputs(self):
+        #Base info variables
         self.brand = str(input("Brand?  "))
         self.model = str(input("Model?  "))
         self.vram = int(input("Video Memory?    "))
+        #Extra info variables
         self.benchmark = int(input("Benchmark %?     "))
         self.url = str(input("URL?  "))
         self.base_clock = int(input("Base Clock speed? (MHz)    "))
         self.price = int(input("Price?      "))
         self.wattage = int(input("Wattage? TDP?     "))
 
-    def identify_category(self):
-        return "gpu"
 
 class Ram:
     def __init__(self):
-        #Base info variables
-        self.brand = "N/A"
-        self.model = "N/A"
-        self.size ="N/A"
-        self.speed = "N/A"
-        #Extra info variables
-        self.benchmark = "N/A"
-        self.url = "N/A"
-        self.price = "N/A"
+        self.category = "ram"
 
-    def _add_new(self):
+    def add_inputs(self):
+        #Base info variables
         self.brand = str(input("Brand?    "))
         self.model = str(input("Model?    "))
         self.size = int(input("Size GB?     "))
         self.speed = int(input("Speed MHz?    "))
+        #Extra info variables
         self.benchmark = int(input("Benchmark %?    "))
         self.url = str(input("Pcpartpicker Link?     "))
         self.price = int(input("Price?     "))
 
-    def identify_category(self):
-        return "ram"
-
 
 class Mobo:
     def __init__(self):
-        #Base info Variables
-        self.brand = "N/A"
-        self.model = "N/A"
-        #Extra info Variables
-        self.form_factor = "N/A"
-        self.url = "N/A"
-        self.price = "N/A"
+        self.category = "mobo"
 
-    def _add_new(self):
+    def add_inputs(self):
+        #Base info Variables
         self.brand = str(input("Brand?    "))
         self.model = str(input("Model?     "))
+        #Extra info Variables
         self.form_factor = str(input("Form factor?    "))
         self.url = str(input("Pcpartpicker Link?     "))
         self.price = int(input("Price?     "))
 
-    def identify_category(self):
-        return "mobo"
-
-class Ssd:
+class Hdd:
     def __init__(self):
-        #Base info Variables
-        self.brand = "N/A"
-        self.model = "N/A"
-        self.size = "N/A"
-        #Extra info variables
-        self.speed = "N/A"
-        self.price = "N/A"
-        self.benchmark = "N/A"
+        self.category = "hdd"
 
-    def _add_new(self):
+    def add_inputs(self):
+        #Base info variables
         self.brand = str(input("Brand?    "))
         self.model = str(input("Model?    "))
         self.size = int(input("Capacity? (GB)   "))
+        #Extra info variables
         self.speed = int(input("Speed (MB/s)    "))
         self.price = int(input("Price?    "))
         self.benchmark = int(input("Benchmark %?   "))
 
-    def identify_category(self):
-        return "ssd"
+class Ssd:
+    def __init__(self):
+        self.category = "ssd"
+
+    def add_inputs(self):
+        #Base info Variables
+        self.brand = str(input("Brand?    "))
+        self.model = str(input("Model?    "))
+        self.size = int(input("Capacity? (GB)   "))
+        #Extra info variables
+        self.speed = int(input("Speed (MB/s)    "))
+        self.price = int(input("Price?    "))
+        self.benchmark = int(input("Benchmark %?   "))
 
 class Psu:
     def __init__(self):
-        self.brand = "N/A"
-        self.model = "N/A"
-        self.wattage = "N/A"
-        self.form_factor = "N/A"
-        self.eff_rating = "N/A"
-        self.price = "N/A"
-        self.date = "N/A"
+        self.category = "psu"
 
-    def _add_new(self):
+    def add_inputs(self):
+        #Base info variables
         self.brand = str(input("Brand?    "))
         self.model = str(input("Model?    "))
         self.wattage = int(input("Wattage?   "))
-        self.form_factor = str(input("Form Factor?    "))
         self.eff_rating = str(input("Efficiency rating?    "))
+        #Extra info variables
+        self.form_factor = str(input("Form Factor?    "))
         self.price = int(input("Price?    "))
         self.date = str(input("Date?     "))
 
-    def identify_category(self):
-        return "psu"
-
 class Monitor:
     def __init__(self):
-        self.brand = "N/A"
-        self.size = "N/A"
-        self.refresh = "N/A"
-        self.model = "N/A"
-        self.type = "N/A"
-        self.price = "N/A"
-        self.date = "N/A"
+        self.category = "monitor"
 
-    def _add_new(self):
+    def add_inputs(self):
+        #Base info variables
         self.brand = str(input("Brand?    "))
         self.size = int(input("Size?     "))
         self.refresh = int(input("Refresh rate?     "))
         self.model = str(input("Model?    "))
+        #Extra info variables
         self.type = str(input("Type?    "))
         self.price = int(input("Price?    "))
         self.date = str(input("Date?    "))
 
-    def identify_category(self):
-        return "monitor"
-
 class Case:
     def __init__(self):
-        self.brand = "N/A"
-        self.model = "N/A"
-        self.type = "N/A"
-        self.price = "N/A"
+        self.category = "case"
 
-    def _add_new(self):
+    def add_inputs(self):
+        #Base info variables
         self.brand = str(input("Brand?    "))
         self.model = str(input("Model?    "))
-        self.type = str(input("Model?    "))
+        #Extra info variables
+        self.form_factor = str(input("Model?    "))
         self.price = int(input("Price?    "))
-
-    def identify_category(self):
-        return "case"
-
 
 def append_part(part):
 
-    category = part.identify_category()
-    with open("Data/main_data/" + category + "_data.json", "a") as database:
+    with open("Data/main_data/" + part.category + "_data.json", "a") as database:
         print ("Appending component... \n")
         json_string = json.dumps(part.__dict__)
         database.write(json_string + "\n")
         print ("Component added! \n")
-
 
 def ask_for_category():
     while True:
@@ -247,7 +193,7 @@ def manual_add_part():
         category_key = ask_for_category() #Function to prompt user for input corresponding to category dict key
         if (category_key != 0):  #pass and exit function if user inputs and function returns 0
             new_part = category_dict[category_key] #create instance of corresponding parts
-            new_part._add_new()
+            new_part.add_inputs()
             append_part(new_part)
         else:    #Hmmm, is it better to include else statement to make pass the last line in function? Or is it better to move it up as inverse of != 0 to exclude else condition?
             print("Exiting Manual Add.")
