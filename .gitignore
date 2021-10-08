@@ -5,6 +5,8 @@ __pycache__/
 Logs/
 # C extensions
 *.so
+#Confidential
+*token.py
 
 # Distribution / packaging
 .Python
@@ -113,5 +115,3 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-#Confidential
-.token.py
