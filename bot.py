@@ -1,6 +1,7 @@
 import discord
 import json
 import re
+from .token import run_token
 
 client = discord.Client()
 
@@ -177,7 +178,4 @@ async def on_message(message):
             await message.channel.send("You have no PC on your profile")
 
 
-
-
-client.run('ODc4MzkyNzkzMDMzMjM2NTgx.YSAhCQ.bzGhb5UoRwiwrHSEc1_UluiGkTI')
-
+run_token()
