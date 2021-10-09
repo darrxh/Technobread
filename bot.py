@@ -1,7 +1,7 @@
 import discord
 import json
 import re
-from .token import run_token
+from .token import retrieve_token
 
 client = discord.Client()
 
@@ -50,7 +50,7 @@ def part_return(category, part_name):
 def add_part(category, part_name):
     if (part_exists(category, part_name)):
 
-
+        pass
     else:
         return
 
@@ -120,7 +120,7 @@ async def on_message(message):
     elif (msg.startswith('$addcpu')):
         if (has_pc(client.user.id)):
 
-
+            pass
         else:
             await message.channel.send("You have no PC on your profile to add parts to.")
 
@@ -128,14 +128,14 @@ async def on_message(message):
     elif (msg.startswith('$addgpu')):
         if (has_pc(client.user.id)):
 
-
+            pass
         else:
             await message.channel.send("You have no PC on your profile to add parts to.")
 
 
     elif (msg.startswith('$addram')):
         if (has_pc(client.user.id)):
-
+            pass
 
         else:
             await message.channel.send("You have no PC on your profile to add parts to.")
@@ -177,5 +177,4 @@ async def on_message(message):
         else:
             await message.channel.send("You have no PC on your profile")
 
-
-run_token()
+client.run(retrieve_token())

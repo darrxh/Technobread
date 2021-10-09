@@ -15,6 +15,10 @@ parts_list = ['cpu',
               'monitor',
               'cooler']
 
+#Takes string, removes all spaces and special characters/returns all letters in uppercase
+def simplify_string(part_name):
+    part_name = part_name.upper()
+    return re.sub("[ -().]", "", part_name)
 
 class Cpu:
     def __init__(self):
@@ -24,6 +28,7 @@ class Cpu:
         #Base info variables
         self.brand = str(input("Brand?  "))
         self.model = str(input("Model?  "))
+        self.reference_name = simplify_string((self.brand + self.model))
         self.cores = int(input("Number of Cores?    "))
         self.threads = int(input("Number of Threads?    "))
         self.base_clock = float(input("Base clock speed?     "))
@@ -44,11 +49,11 @@ class Gpu:
         #Base info variables
         self.brand = str(input("Brand?  "))
         self.model = str(input("Model?  "))
+        self.reference_name = simplify_string((self.brand + self.model))
         self.vram = int(input("Video Memory?    "))
         #Extra info variables
         self.benchmark = int(input("Benchmark %?     "))
         self.url = str(input("URL?  "))
-        self.base_clock = int(input("Base Clock speed? (MHz)    "))
         self.price = int(input("Price?      "))
         self.wattage = int(input("Wattage? TDP?     "))
 
@@ -61,6 +66,7 @@ class Ram:
         #Base info variables
         self.brand = str(input("Brand?    "))
         self.model = str(input("Model?    "))
+        self.reference_name = simplify_string((self.brand + self.model))
         self.size = int(input("Size GB?     "))
         self.speed = int(input("Speed MHz?    "))
         #Extra info variables
@@ -77,6 +83,7 @@ class Mobo:
         #Base info Variables
         self.brand = str(input("Brand?    "))
         self.model = str(input("Model?     "))
+        self.reference_name = simplify_string((self.brand + self.model))
         #Extra info Variables
         self.form_factor = str(input("Form factor?    "))
         self.url = str(input("Pcpartpicker Link?     "))
@@ -90,6 +97,7 @@ class Hdd:
         #Base info variables
         self.brand = str(input("Brand?    "))
         self.model = str(input("Model?    "))
+        self.reference_name = simplify_string((self.brand + self.model))
         self.size = int(input("Capacity? (GB)   "))
         #Extra info variables
         self.speed = int(input("Speed (MB/s)    "))
@@ -104,6 +112,7 @@ class Ssd:
         #Base info Variables
         self.brand = str(input("Brand?    "))
         self.model = str(input("Model?    "))
+        self.reference_name = simplify_string((self.brand + self.model))
         self.size = int(input("Capacity? (GB)   "))
         #Extra info variables
         self.speed = int(input("Speed (MB/s)    "))
@@ -118,6 +127,7 @@ class Psu:
         #Base info variables
         self.brand = str(input("Brand?    "))
         self.model = str(input("Model?    "))
+        self.reference_name = simplify_string((self.brand + self.model))
         self.wattage = int(input("Wattage?   "))
         self.eff_rating = str(input("Efficiency rating?    "))
         #Extra info variables
@@ -132,9 +142,10 @@ class Monitor:
     def add_inputs(self):
         #Base info variables
         self.brand = str(input("Brand?    "))
+        self.model = str(input("Model?    "))
+        self.reference_name = simplify_string((self.brand + self.model))
         self.size = int(input("Size?     "))
         self.refresh = int(input("Refresh rate?     "))
-        self.model = str(input("Model?    "))
         #Extra info variables
         self.type = str(input("Type?    "))
         self.price = int(input("Price?    "))
@@ -148,17 +159,34 @@ class Case:
         #Base info variables
         self.brand = str(input("Brand?    "))
         self.model = str(input("Model?    "))
+        self.reference_name = simplify_string((self.brand + self.model))
         #Extra info variables
         self.form_factor = str(input("Model?    "))
         self.price = int(input("Price?    "))
 
+#MODIFY TO CREATE CORRECT JSON FORMAT
 def append_part(part):
-
+    if (has_duplicates(part)):
+        return
     with open("Data/main_data/" + part.category + "_data.json", "a") as database:
         print ("Appending component... \n")
-        json_string = json.dumps(part.__dict__)
+        data = json.load(database)
+        data.append(part.__dict__)
         database.write(json_string + "\n")
         print ("Component added! \n")
+
+#TEST THIS FUNCTION BUT FIX append_part FUNCTION FIRST
+def has_duplicates(new_part):
+    with open("Data/main_data/" + new_part.category + "_data.json", "r") as database:
+        data_list = json.loads(database)
+        database.close()
+    for each_part in data_list:
+        if (new_part.reference_name == each_part[reference_name]):
+            print("Duplicate found.")
+            return True
+    print ("No Duplicates found.")
+    return False
+
 
 def ask_for_category():
     while True:
@@ -172,7 +200,7 @@ def ask_for_category():
         except Exception as other_error:
             print(other_error)
             with open('Logs/parts_database_errors.log', 'a') as log:    #Write to logs if different error occurs
-                log.write(str(datetime.now()) + ":  " + other_error + "\n")
+                log.write(str(datetime.now()) + ":  " + str(other_error) + "\n")
                 log.close()
         else:
             return category_index
@@ -197,30 +225,10 @@ def manual_add_part():
             append_part(new_part)
         else:    #Hmmm, is it better to include else statement to make pass the last line in function? Or is it better to move it up as inverse of != 0 to exclude else condition?
             print("Exiting Manual Add.")
-            pass
+            break
+    pass
 
 
-
-
-
-def brand_verify(part_category, part_name):
-    ram_brand_list = ["Corsair", "G.Skill", "HyperX", "Crucial", "Kingston", "TeamGroup"]
-    cpu_brand_list = ["AMD", "Intel"]
-    gpu_brand_list = ["Nvidia", "AMD"]
-    mobo_brand_list = ["Asrock", "Asus", "MSI"]
-    case_brand_list = ["Corsair", "Lian Li", "NZXT", "Gigabyte", "Antec"]
-
-    if (part_name in brand_list):
-        return True
-
-    return False
-
-
-#Takes string, removes all spaces and special characters/returns all letters in uppercase
-def simplify_string(part_name):
-    part_name = part_name.upper()
-    simple_name = re.sub("[ -().]", "", part_name)
-    return simple_name
 
 
 

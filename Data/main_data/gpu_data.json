@@ -1,1 +1,10 @@
 {"category": "gpu", "brand": "Nvidia", "model": "RTX 3070", "vram": 8, "benchmark": 140, "url": "sdfjuahsdlkfjah.com", "base_clock": 30000, "price": 389, "wattage": 202}
+{"category": "gpu", "brand": "Nvidia\n", "model": "RTX 3070\n", "vram": 8, "benchmark": 120, "url": "fkasdjfl.com\n", "price": 679, "wattage": 200}
+{"category": "gpu",
+ "brand": "Nvidia",
+ "model": "RTX 3070",
+ "vram": 8,
+ "benchmark": 120,
+ "url": "asdfajsdf.com",
+ "price": 679,
+ "wattage": 200}
