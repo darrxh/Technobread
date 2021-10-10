@@ -174,6 +174,7 @@ def append_part(part):
         data.append(part.__dict__)
         database.write(json_string + "\n")
         print ("Component added! \n")
+        database.close()
 
 #TEST THIS FUNCTION BUT FIX append_part FUNCTION FIRST
 def has_duplicates(new_part):
@@ -219,14 +220,14 @@ def manual_add_part():
 
     while True:
         category_key = ask_for_category() #Function to prompt user for input corresponding to category dict key
-        if (category_key != 0):  #pass and exit function if user inputs and function returns 0
-            new_part = category_dict[category_key] #create instance of corresponding parts
-            new_part.add_inputs()
-            append_part(new_part)
-        else:    #Hmmm, is it better to include else statement to make pass the last line in function? Or is it better to move it up as inverse of != 0 to exclude else condition?
+        if (category_key == 0):  #pass and exit function if user inputs and function returns 0
             print("Exiting Manual Add.")
-            break
-    pass
+            return
+        new_part = category_dict[category_key] #create instance of corresponding parts
+        new_part.add_inputs()
+        append_part(new_part)
+
+
 
 
 
