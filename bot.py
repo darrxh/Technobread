@@ -1,7 +1,6 @@
 import discord
 import json
 import re
-from .token import retrieve_token
 
 client = discord.Client()
 
@@ -177,4 +176,7 @@ async def on_message(message):
         else:
             await message.channel.send("You have no PC on your profile")
 
-client.run(retrieve_token())
+with open("token.txt","r") as file:
+    token = str(file)
+    file.close()
+client.run(token)

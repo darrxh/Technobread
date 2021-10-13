@@ -6,7 +6,7 @@ Logs/
 # C extensions
 *.so
 #Confidential
-token.py
+token.txt
 
 # Distribution / packaging
 .Python

@@ -229,10 +229,6 @@ def manual_add_part():
 
 
 
-
-
-
-
 def threadripper_match(cpu_name):
 
     cpu_name = simplify_string(cpu_name)
