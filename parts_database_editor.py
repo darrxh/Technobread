@@ -4,6 +4,7 @@ import json
 
 #api = API()
 
+"""
 parts_list = ['cpu',
               'video-card',
               'memory',
@@ -14,6 +15,7 @@ parts_list = ['cpu',
               'hhd',
               'monitor',
               'cooler']
+"""
 
 #Takes string, removes all spaces and special characters/returns all letters in uppercase
 def simplify_string(part_name):
@@ -168,24 +170,28 @@ class Case:
 def append_part(part):
     if (has_duplicates(part)):
         return
-    with open("Data/main_data/" + part.category + "_data.json", "a") as database:
-        print ("Appending component... \n")
-        data = json.load(database)
-        data.append(part.__dict__)
-        database.write(json_string + "\n")
-        print ("Component added! \n")
+    with open("Data/main_data/" + part.category + "_data.json", "r") as database:
+        part_list = json.load(database)
         database.close()
+    part_list.append(part.__dict__)
+    with open("Data/main_data/" + part.category + "_data.json", "w") as database:
+        json.dump(part_list, database, indent=2)
+
+    print("Append successful!")
+
 
 #TEST THIS FUNCTION BUT FIX append_part FUNCTION FIRST
 def has_duplicates(new_part):
     with open("Data/main_data/" + new_part.category + "_data.json", "r") as database:
-        data_list = json.loads(database)
+        data_list = json.load(database)
         database.close()
+    if (not data_list): #List cannot have duplicates if list is empty
+        return False
     for each_part in data_list:
-        if (new_part.reference_name == each_part[reference_name]):
+        if (new_part.reference_name == each_part["reference_name"]):
             print("Duplicate found.")
             return True
-    print ("No Duplicates found.")
+    #No duplicates = return False
     return False
 
 

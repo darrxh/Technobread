@@ -1,10 +1,35 @@
-{"category": "gpu", "brand": "Nvidia", "model": "RTX 3070", "vram": 8, "benchmark": 140, "url": "sdfjuahsdlkfjah.com", "base_clock": 30000, "price": 389, "wattage": 202}
-{"category": "gpu", "brand": "Nvidia\n", "model": "RTX 3070\n", "vram": 8, "benchmark": 120, "url": "fkasdjfl.com\n", "price": 679, "wattage": 200}
-{"category": "gpu",
- "brand": "Nvidia",
- "model": "RTX 3070",
- "vram": 8,
- "benchmark": 120,
- "url": "asdfajsdf.com",
- "price": 679,
- "wattage": 200}
+[
+  {
+    "category": "gpu",
+    "brand": "Nvidia",
+    "model": "RTX 2060",
+    "reference_name": "NVIDIARTX2060",
+    "vram": 6,
+    "benchmark": 80,
+    "url": "askdjhfaskldjf.com",
+    "price": 400,
+    "wattage": 140
+  },
+  {
+    "category": "gpu",
+    "brand": "Nvidia",
+    "model": "2070",
+    "reference_name": "NVIDIA2070",
+    "vram": 8,
+    "benchmark": 100,
+    "url": "ASdkfjhgasdkfjasd.com",
+    "price": 500,
+    "wattage": 200
+  },
+  {
+    "category": "gpu",
+    "brand": "AMD",
+    "model": "rx 580",
+    "reference_name": "AMDRX580",
+    "vram": 8,
+    "benchmark": 100,
+    "url": "asdkfjhagsdkf.com",
+    "price": 200,
+    "wattage": 100
+  }
+]
