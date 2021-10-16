@@ -166,7 +166,6 @@ class Case:
         self.form_factor = str(input("Model?    "))
         self.price = int(input("Price?    "))
 
-#MODIFY TO CREATE CORRECT JSON FORMAT
 def append_part(part):
     if (has_duplicates(part)):
         return
@@ -180,7 +179,6 @@ def append_part(part):
     print("Append successful!")
 
 
-#TEST THIS FUNCTION BUT FIX append_part FUNCTION FIRST
 def has_duplicates(new_part):
     with open("Data/main_data/" + new_part.category + "_data.json", "r") as database:
         data_list = json.load(database)
