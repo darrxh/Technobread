@@ -19,6 +19,18 @@ def ub_data_update():
     print ("coming soon")
 
 
+def threadripper_match(cpu_name):
+
+    cpu_name = simplify_string(cpu_name)
+    if ("THREADRIPPER" in cpu_name):
+        model_number = cpu_name.replace("THREADRIPPER", "")
+    elif ("RYZENTR" in cpu_name):
+        model_number = cpu_name.replace("RYZENTR", "")
+
+    cpu_name = "Ryzen Threadripper" + model_number
+    return cpu_name
+
+
 
 def has_duplicates(list):
     for element in list:

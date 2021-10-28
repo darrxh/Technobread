@@ -7,7 +7,7 @@ Logs/
 *.so
 #Confidential
 token.txt
-
+temp.py
 # Distribution / packaging
 .Python
 .idea/

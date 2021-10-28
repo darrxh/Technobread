@@ -231,21 +231,15 @@ def manual_add_part():
         new_part.add_inputs()
         append_part(new_part)
 
+def manual_remove_part():
 
-
-def threadripper_match(cpu_name):
-
-    cpu_name = simplify_string(cpu_name)
-    if ("THREADRIPPER" in cpu_name):
-        model_number = cpu_name.replace("THREADRIPPER", "")
-    elif ("RYZENTR" in cpu_name):
-        model_number = cpu_name.replace("RYZENTR", "")
-
-    cpu_name = "Ryzen Threadripper" + model_number
-    return cpu_name
-
-
-
+    print ("Enter category of part to remove. \n")
+    category_key = ask_for_category()
+    if (category_key == 0):
+        print("Exiting Manual Remove. \n")
+        return
+    while True:
+        print("Enter part to remove (Brand + Model) \n")
 
 
 
