@@ -168,7 +168,8 @@ class Case:
 
 def append_part(part):
 
-    if (has_duplicates(part)):
+    if (part_exists()):
+        print ("Duplicate found.")
         return
     with open("Data/main_data/" + part.category + "_data.json", "r") as database:
         part_list = json.load(database)
@@ -178,37 +179,37 @@ def append_part(part):
         json.dump(part_list, database, indent=2)
     print("Append successful!")
 
-def remove_part(part_name, part_category):
+def remove_part(part_name, part):
+
+    part.reference_name = simplify_string(str(input("Enter part to remove (Brand + Model) \n")))
+    if not (part_exists(part)):
+        print ("Part not found.")
+        return
 
     with open("Data/main_data/" + part_category + "_data.json", "r") as database:
         part_list = json.load(database)
         database.close()
     for each_part in part_list:
-        if (each_part["reference_name"] == part_name):
+        if (each_part["reference_name"] == part.reference_name):
             part_list.remove(each_part)
     with open("Data/main_data/" + part_category + "_data.json", "w") as database:
         json.dump(part_list, database, indent=2)
     print("Remove successful!")
 
 
+def part_exists(part):
 
-def has_duplicates(new_part):
-
-    with open("Data/main_data/" + new_part.category + "_data.json", "r") as database:
+    with open("Data/main_data/" + part.category + "_data.json", "r") as database:
         data_list = json.load(database)
         database.close()
     if (not data_list): #List cannot have duplicates if list is empty
         return False
     for each_part in data_list:
-        if (new_part.reference_name == each_part["reference_name"]):
+        if (part.reference_name == each_part["reference_name"]):
             print("Duplicate found.")
             return True
-    #No duplicates = return False
+    #No such part = return False
     return False
-
-def part_exists(part):
-    pass
-
 
 def ask_for_category():
 
@@ -242,7 +243,7 @@ def manual_add_part():
 
     while True:
         new_part = ask_for_category() #Function to prompt user for input corresponding to category dict key
-        if (category is None):  #pass and exit function if user inputs and function returns 0
+        if (new_part is None):  #pass and exit function if user inputs and function returns 0
             print("Exiting Manual Add.")
             return
         new_part.add_inputs()
@@ -255,24 +256,7 @@ def manual_remove_part():
         if (part is None): #pass and exit function if user inputs and function returns 0
             print("Exiting Manual Remove. \n")
             return
-        part_name = simplify_string(str(input("Enter part to remove (Brand + Model) \n")))
-        remove_part(part_name, part.category)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        remove_part(part)
 
 
 
