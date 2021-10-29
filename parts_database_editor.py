@@ -167,6 +167,7 @@ class Case:
         self.price = int(input("Price?    "))
 
 def append_part(part):
+
     if (has_duplicates(part)):
         return
     with open("Data/main_data/" + part.category + "_data.json", "r") as database:
@@ -175,11 +176,24 @@ def append_part(part):
     part_list.append(part.__dict__)
     with open("Data/main_data/" + part.category + "_data.json", "w") as database:
         json.dump(part_list, database, indent=2)
-
     print("Append successful!")
+
+def remove_part(part_name, part_category):
+
+    with open("Data/main_data/" + part_category + "_data.json", "r") as database:
+        part_list = json.load(database)
+        database.close()
+    for each_part in part_list:
+        if (each_part["reference_name"] == part_name):
+            part_list.remove(each_part)
+    with open("Data/main_data/" + part_category + "_data.json", "w") as database:
+        json.dump(part_list, database, indent=2)
+    print("Remove successful!")
+
 
 
 def has_duplicates(new_part):
+
     with open("Data/main_data/" + new_part.category + "_data.json", "r") as database:
         data_list = json.load(database)
         database.close()
@@ -192,10 +206,23 @@ def has_duplicates(new_part):
     #No duplicates = return False
     return False
 
+def part_exists(part):
+    pass
+
 
 def ask_for_category():
+
+    category_dict = {0: None
+                     1: Cpu(),
+                     2: Gpu(),
+                     3: Ram(),
+                     4: Mobo(),
+                     5: Ssd(),
+                     6: Hdd(),
+                     7: Psu(),
+                     8: Case()}
     while True:
-        print("Which part to add(input number above part | 0 to exit)?\n 1  |  2  |  3  |  4   |  5  |  6  |  7  |   8\nCPU | GPU | RAM | MOBO | SSD | HDD | PSU | CASE")
+        print("Which part to add/remove? (input number above part | 0 to exit)?\n 1  |  2  |  3  |  4   |  5  |  6  |  7  |   8\nCPU | GPU | RAM | MOBO | SSD | HDD | PSU | CASE")
         try:
             category_index = int(input()) #Ask for user to input int between 0 and number of categories in database
             if (category_index > 8 or category_index < 0):
@@ -208,38 +235,38 @@ def ask_for_category():
                 log.write(str(datetime.now()) + ":  " + str(other_error) + "\n")
                 log.close()
         else:
-            return category_index
+            return category_dict[category_index]
 
 
 def manual_add_part():
 
-    category_dict = {1: Cpu(),
-                     2: Gpu(),
-                     3: Ram(),
-                     4: Mobo(),
-                     5: Ssd(),
-                     6: Hdd(),
-                     7: Psu(),
-                     8: Case()}
-
     while True:
-        category_key = ask_for_category() #Function to prompt user for input corresponding to category dict key
-        if (category_key == 0):  #pass and exit function if user inputs and function returns 0
+        new_part = ask_for_category() #Function to prompt user for input corresponding to category dict key
+        if (category is None):  #pass and exit function if user inputs and function returns 0
             print("Exiting Manual Add.")
             return
-        new_part = category_dict[category_key] #create instance of corresponding parts
         new_part.add_inputs()
         append_part(new_part)
 
 def manual_remove_part():
 
-    print ("Enter category of part to remove. \n")
-    category_key = ask_for_category()
-    if (category_key == 0):
-        print("Exiting Manual Remove. \n")
-        return
     while True:
-        print("Enter part to remove (Brand + Model) \n")
+        part = ask_for_category()
+        if (part is None): #pass and exit function if user inputs and function returns 0
+            print("Exiting Manual Remove. \n")
+            return
+        part_name = simplify_string(str(input("Enter part to remove (Brand + Model) \n")))
+        remove_part(part_name, part.category)
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -250,6 +277,9 @@ def manual_remove_part():
 
 
 def main():
-    common_part_counter()
+
+    if (input == "Edit JSON Data"):
+        manual_add_part()
+        manual_remove_part()
 
 main()
