@@ -282,21 +282,24 @@ def pcpp_data_update():
             print("Write successful for " + category + " category. \n")
     print("PcPartPicker Parts files updated")
 
-def main_cpu_update(part): #NOV 2 11:58PM //// FINISH/REFACTOR
-    with open("Data/PCPP/cpu_PCPP_Data.json", "r") as pcpp_database:
+def main_cpu_update(part): #Refactor/fix empties
+    with open("Data/PCPP/cpu_Data_PCPP.json", "r") as pcpp_database:
         pcpp_list = json.load(pcpp_database)
     for each_part in pcpp_list:
         cpu = Cpu()
-        cpu.model = each_part[]
-        cpu.brand =
-        cpu.price =
-        cpu.base_clock =
-        cpu.boost_clock =
-        cpu.cores =
-        cpu.integrated_graphics =
-        cpu.release_date =
-        cpu.threads =
-        cpu.url =
+        cpu.model = each_part["model"]
+        cpu.brand = each_part["brand"]
+        cpu.price = each_part["price"][1]
+        #cpu.base_clock = each_part["base_clock"]
+        cpu.boost_clock = each_part["boost_clock"]
+        cpu.cores = each_part["cores"]
+        cpu.integrated_graphics = each_part["integrated_graphics"]
+        #cpu.release_date = each_part[""]
+        if (each_part["multithreading"]):
+            cpu.threads = cpu.cores * 2
+        else:
+            cpu.threads = cpu.cores
+        #cpu.url = each_part[""]
 
 
 
