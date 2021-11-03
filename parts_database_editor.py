@@ -254,6 +254,22 @@ def manual_remove_part():
             return
         remove_part(part)
 
+
+def pvpp_name_convert(category):
+
+
+    conversion_dict ={ "cpu": "cpu",
+                     "gpu": "video-card",
+                     "ram": "memory",
+                     "mobo": "motherboard",
+                     "ssd": "ssd",
+                     "hhd": "hhd",
+                     "psu": "power-supply",
+                     "case": "case",
+                     "monitor": "monitor"}
+
+    return conversion_dict[category]
+
 def pcpp_data_update():
 
     pcpp_api = API()
@@ -270,8 +286,9 @@ def pcpp_data_update():
 
 
 def main_data_update():
+    part = ask_for_category()
+    with open("Data/Main/" + part.category + "_main_data", "w") as database:
 
-    pass
 
 def main():
 
