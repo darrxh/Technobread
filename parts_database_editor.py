@@ -255,8 +255,7 @@ def manual_remove_part():
         remove_part(part)
 
 
-def pvpp_name_convert(category):
-
+def pcpp_name_convert(category):
 
     conversion_dict ={ "cpu": "cpu",
                      "gpu": "video-card",
@@ -267,7 +266,6 @@ def pvpp_name_convert(category):
                      "psu": "power-supply",
                      "case": "case",
                      "monitor": "monitor"}
-
     return conversion_dict[category]
 
 def pcpp_data_update():
@@ -284,10 +282,29 @@ def pcpp_data_update():
             print("Write successful for " + category + " category. \n")
     print("PcPartPicker Parts files updated")
 
+def main_cpu_update(part): #NOV 2 11:58PM //// FINISH/REFACTOR
+    with open("Data/PCPP/cpu_PCPP_Data.json", "r") as pcpp_database:
+        pcpp_list = json.load(pcpp_database)
+    for each_part in pcpp_list:
+        cpu = Cpu()
+        cpu.model = each_part[]
+        cpu.brand =
+        cpu.price =
+        cpu.base_clock =
+        cpu.boost_clock =
+        cpu.cores =
+        cpu.integrated_graphics =
+        cpu.release_date =
+        cpu.threads =
+        cpu.url =
 
-def main_data_update():
+
+
+def main_data_update(): #NOV 2 11:53PM//// FINISH FUNCTION
     part = ask_for_category()
-    with open("Data/Main/" + part.category + "_main_data", "w") as database:
+    with open("Data/Main/" + part.category + "_main_data", "r") as database:
+
+
 
 
 def main():
