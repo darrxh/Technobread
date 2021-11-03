@@ -2,20 +2,16 @@ import re
 #from pcpartpicker import API
 import json
 
-#api = API()
-
-"""
-parts_list = ['cpu',
-              'video-card',
-              'memory',
-              'motherboard',
-              'case',
-              'power-supply',
-              'ssd',
-              'hhd',
-              'monitor',
-              'cooler']
-"""
+PCPP_PARTS_LIST = ['cpu',
+                  'video-card',
+                  'memory',
+                  'motherboard',
+                  'case',
+                  'power-supply',
+                  'ssd',
+                  'hhd',
+                  'monitor',
+                  'cooler']
 
 #Takes string, removes all spaces and special characters/returns all letters in uppercase
 def simplify_string(part_name):
@@ -186,7 +182,7 @@ def remove_part(part_name, part):
         print ("Part not found.")
         return
 
-    with open("Data/main_data/" + part_category + "_data.json", "r") as database:
+    with open("Data/main_data/" + part.category + "_data.json", "r") as database:
         part_list = json.load(database)
         database.close()
     for each_part in part_list:
@@ -258,7 +254,24 @@ def manual_remove_part():
             return
         remove_part(part)
 
+def pcpp_data_update():
 
+    pcpp_api = API()
+
+    for category in PCPP_PARTS_LIST:
+        print("Retrieving " + category + " object...")
+        data_object = pcpp_api.retrieve(category)
+        print("Part object retrieved... \n creating JSON text")
+        with open ("Data/PCPP/" + category + "_PCPP_Data.json", "w") as database:
+            print("Creating/Writing text file...")
+            data_json = json.dump(data_object, database, indent=2)
+            print("Write successful for " + category + " category. \n")
+    print("PcPartPicker Parts files updated")
+
+
+def main_data_update():
+
+    pass
 
 def main():
 
