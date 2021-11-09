@@ -48,7 +48,6 @@ def part_return(category, part_name):
         # <--
 def add_part(category, part_name):
     if (part_exists(category, part_name)):
-
         pass
     else:
         return
@@ -76,6 +75,9 @@ async def on_message(message):
     msg = message.content.lower()
     if (msg.startswith('$hello')):
         await message.channel.send('Hello!')
+
+    elif (msg.startswith('$superuser')):
+
 
     elif (msg.startswith('$myid')):
         await message.channel.send('your Id is ' + str(client.user.id))
