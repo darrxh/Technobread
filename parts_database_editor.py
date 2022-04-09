@@ -133,6 +133,29 @@ class Psu:
         self.price = int(input("Price?    "))
         self.date = str(input("Date?     "))
 
+
+class Cpu_Cooler:
+    def __init__(self):
+        self.category = "Cpu_Cooler"
+
+    def add_inputs(self):
+        #Base info variables
+        self.brand = str(input("Brand?    "))
+        self.model = str(input("Model?    "))
+        self.reference_name = simplify_string((self.brand + self.model))
+        self.type = str(input("AIO or Air?"))
+        #Extra info variables
+        self.price = int(input("Price?    "))
+        self.date = str(input("Date?     "))
+
+class OS:
+    def __init__(self):
+        self.category = "os"
+
+    def add_inputs(self):
+        #Base info variables
+        self.name = str(input("Which Operating System?"))
+
 class Monitor:
     def __init__(self):
         self.category = "monitor"
@@ -175,6 +198,9 @@ def append_part(part):
         json.dump(part_list, database, indent=2)
     print("Append successful!")
 
+
+
+
 def remove_part(part_name, part):
 
     part.reference_name = simplify_string(str(input("Enter part to remove (Brand + Model) \n")))
@@ -188,6 +214,7 @@ def remove_part(part_name, part):
     for each_part in part_list:
         if (each_part["reference_name"] == part.reference_name):
             part_list.remove(each_part)
+
     with open("Data/main_data/" + part_category + "_data.json", "w") as database:
         json.dump(part_list, database, indent=2)
     print("Remove successful!")
@@ -306,8 +333,6 @@ def main_cpu_update(part): #Refactor/fix empties
 def main_data_update(): #NOV 2 11:53PM//// FINISH FUNCTION
     part = ask_for_category()
     with open("Data/Main/" + part.category + "_main_data", "r") as database:
-
-
 
 
 def main():
