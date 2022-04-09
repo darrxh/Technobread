@@ -44,7 +44,6 @@ def part_return(category, part_name):
                 return part_index
 
 
-
         # <--
 def add_part(category, part_name):
     if (part_exists(category, part_name)):
